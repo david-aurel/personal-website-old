@@ -9,11 +9,26 @@
 .man {
     position: relative;
     height: 500px;
-    width: 500px;
+    width: 700px;
 }
 
 .man img {
     position: absolute;
+}
+
+.upper-body {
+    width: 65%;
+    height: 65%;
+    bottom: 25%;
+    position: absolute;
+}
+
+.boat-legs-laptop-motor {
+    position: absolute;
+    width: 90%;
+    height: 78.6%;
+    bottom: 0;
+    left: 3%;
 }
 
 .legs-and-boat {
@@ -22,32 +37,57 @@
 }
 
 .motor {
+    position: absolute;
     width: 28%;
-    bottom: 0;
-    right: 0;
+    height: 50%;
+    bottom: 11%;
+    right: 1%;
+}
+
+.propeller {
+    bottom: -14%;
+    width: 36%;
+    right: 29%;
 }
 
 .torso {
-    width: 23%;
-    top: 28%;
-    right: 30.8%;
+    height: 100%;
+    top: 0;
+    right: 0;
 }
 
 .l-arm {
-    width: 28%;
-    right: 39%;
-    top: 39.4%;
+    width: 36%;
+    right: 13%;
+    top: 23%;
     z-index: 1;
 }
 
 .r-arm {
-    width: 17%;
-    top: 46%;
-    right: 48%;
+    width: 26%;
+    top: 35%;
+    right: 24%;
 }
 
 .laptop {
     width: 16%;
-    top: 37.5%;
+    top: 0;
     left: 25.5%;
+}
+
+/* animate motor */
+
+.motor {
+    transform-origin: 30% 50%;
+    animation: wiggle 80ms infinite;
+}
+
+@keyframes wiggle {
+    0%,
+    100% {
+        transform: rotate(-0.8deg);
+    }
+    50% {
+        transform: rotate(0.8deg);
+    }
 }
