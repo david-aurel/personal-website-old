@@ -231,7 +231,7 @@
 
 .l-low-arm {
     transform-origin: 77% 46%;
-    animation: l-low-arm-opening-laptop 4s;
+    animation: l-low-arm-opening-laptop 4s, typing 300ms 4s infinite;
 }
 
 @keyframes l-arm-opening-laptop {
@@ -253,6 +253,19 @@
         transform: rotate(-33deg);
     }
     100% {
+    }
+}
+
+/* animate typing */
+.r-arm {
+    animation: typing 300ms 4150ms infinite;
+}
+@keyframes typing {
+    0%,
+    100% {
+    }
+    50% {
+        transform: rotate(3deg);
     }
 }
 
