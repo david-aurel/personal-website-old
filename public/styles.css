@@ -77,10 +77,23 @@
 }
 
 .l-arm {
-    width: 36%;
-    right: 13%;
-    top: 23%;
+    position: absolute;
+    width: 39%;
+    height: 46%;
+    right: 12%;
+    top: 21%;
     z-index: 1;
+}
+
+.l-up-arm {
+    height: 100%;
+    right: 0;
+}
+
+.l-low-arm {
+    width: 91.2%;
+    bottom: 0;
+    left: 0;
 }
 
 .r-arm {
@@ -111,7 +124,7 @@
 
 .motor {
     transform-origin: 30% 50%;
-    /* animation: wiggle 80ms infinite; */
+    animation: wiggle 80ms infinite;
 }
 
 @keyframes wiggle {
@@ -127,7 +140,7 @@
 /* animate propeller turning */
 
 .propeller {
-    /* animation: propeller 200ms linear infinite; */
+    animation: propeller 200ms linear infinite;
 }
 
 @keyframes propeller {
@@ -143,7 +156,7 @@
 /* animate boat wiggle */
 .man {
     transform-origin: 60% 100%;
-    /* animation: boat-wiggle 370ms infinite; */
+    animation: boat-wiggle 370ms infinite;
 }
 
 @keyframes boat-wiggle {
@@ -163,6 +176,19 @@
     width: 100%;
     height: 15%;
     bottom: 0;
+    animation: water 20s;
+}
+
+@keyframes water {
+    0% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .wave {
@@ -170,7 +196,7 @@
     height: 100%;
     background: url('man_layers_v2/wave.svg');
     background-size: contain;
-    /* animation: wave 300ms linear infinite; */
+    animation: wave 300ms linear infinite;
 }
 
 @keyframes wave {
@@ -195,4 +221,48 @@
     }
     100% {
     }
+}
+
+/* animate left arm opening the laptop */
+.l-arm {
+    transform-origin: 79% 13%;
+    animation: l-arm-opening-laptop 4s;
+}
+
+.l-low-arm {
+    transform-origin: 77% 46%;
+    animation: l-low-arm-opening-laptop 4s;
+}
+
+@keyframes l-arm-opening-laptop {
+    0% {
+        transform: rotate(-21deg);
+    }
+    50% {
+        transform: rotate(54deg);
+    }
+    100% {
+    }
+}
+
+@keyframes l-low-arm-opening-laptop {
+    0% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-33deg);
+    }
+    100% {
+    }
+}
+
+/* delay for boat animations  */
+
+.man,
+.propeller {
+    animation-delay: 7s;
+}
+
+.motor {
+    animation-delay: 4.5s;
 }
