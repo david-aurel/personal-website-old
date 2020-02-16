@@ -8,12 +8,14 @@
 
 .animation {
     position: relative;
+    height: 500px;
+    width: 700px;
 }
 .man {
     position: relative;
-    height: 500px;
-    width: 700px;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .man img {
@@ -156,7 +158,7 @@
     height: 100%;
     background: url('man_layers_v2/wave.svg');
     background-size: contain;
-    animation: wave 250ms linear infinite;
+    animation: wave 300ms linear infinite;
 }
 
 @keyframes wave {
@@ -164,6 +166,6 @@
         background-position: 0% 0%;
     }
     100% {
-        background-position: 105%;
+        background-position: 164%;
     }
 }
