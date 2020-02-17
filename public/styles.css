@@ -59,6 +59,7 @@ body {
 /* navbar */
 .navLinks {
     display: flex;
+    height: 30px;
     margin: 20px auto 0 auto;
     justify-content: space-between;
     max-width: 300px;
@@ -67,28 +68,21 @@ body {
     position: relative;
 }
 
-/* .active {
-    border-bottom: 2px solid var(--yellow);
-    padding-bottom: 7px;
-} */
-
 .slider {
     transition: 0.5s;
     position: absolute;
     bottom: 0;
     height: 2px;
     width: 25%;
-    background: black;
+    background: var(--yellow);
     margin-left: 0;
 }
 
-/* .navLinks div:nth-of-type(2):hover ~ .slider {
-    margin-left: 39%;
+.space {
+    flex-grow: 1;
+    background: white;
+    z-index: 1;
 }
-
-.navLinks div:nth-of-type(3):hover ~ .slider {
-    margin-left: 76%;
-} */
 
 /* main */
 main p {

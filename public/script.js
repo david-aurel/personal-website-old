@@ -1,15 +1,14 @@
 (function() {
     var pages = document.querySelectorAll('.page');
     var nav = document.querySelector('nav');
-    var navElems = document.querySelectorAll('.navLinks div');
+    var navElems = document.querySelectorAll('.navLink');
     var slider = document.querySelector('.slider');
 
     nav.addEventListener('click', function(e) {
-        pages.forEach(function(elem) {
-            elem.classList.remove('show');
-        });
+        pages.forEach(function(elem) {});
         for (var i = 0; i < navElems.length; i++) {
             if (e.target == navElems[i]) {
+                document.querySelector('.show').classList.remove('show');
                 pages[i].classList.add('show');
             }
         }
