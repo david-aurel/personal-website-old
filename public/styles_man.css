@@ -12,7 +12,7 @@
     width: 210px;
     transform: scale(-1, 1);
     right: -13%;
-    bottom: 0;
+    top: 13%;
 }
 
 .man {

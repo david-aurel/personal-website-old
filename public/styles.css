@@ -22,23 +22,26 @@
 
 /* header */
 
-.header {
+body {
     max-width: 600px;
     margin: 0 auto;
-    height: 30vh;
+    padding: 0 20px;
+}
+.header {
+    margin-bottom: 50px;
 }
 
 .flex-header {
     display: flex;
     justify-content: space-between;
-    height: 90%;
-    margin: 0 20px;
+
+    height: 175px;
 }
 
 .animation-wrapper {
     position: relative;
-    height: 100%;
-    width: 21vh;
+    height: 100px;
+    width: 26vh;
 }
 
 .title {
@@ -51,4 +54,27 @@
 .title h3 {
     font-size: min(4.2vw, 22px);
     margin: 4px 4px 0 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+@media (min-width: 545px) {
+    .flex-header {
+        height: auto;
+    }
+    header nav {
+        margin: 20px 0;
+    }
+}
+
+.active {
+    border-bottom: 2px solid var(--yellow);
+    padding-bottom: 7px;
 }
