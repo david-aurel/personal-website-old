@@ -8,8 +8,9 @@
 
 .animation {
     position: relative;
-    height: 500px;
-    width: 700px;
+    min-height: 200px;
+    min-width: 280px;
+    transform: scale(-1, 1);
 }
 .man {
     position: relative;
@@ -124,7 +125,7 @@
 
 .motor {
     transform-origin: 30% 50%;
-    animation: wiggle 80ms infinite;
+    /* animation: wiggle 80ms infinite; */
 }
 
 @keyframes wiggle {
@@ -140,7 +141,7 @@
 /* animate propeller turning */
 
 .propeller {
-    animation: start-propeller 12s, propeller 200ms linear infinite;
+    /* animation: start-propeller 12s, propeller 200ms linear infinite; */
 }
 
 @keyframes propeller {
@@ -168,7 +169,7 @@
 /* animate boat wiggle */
 .man {
     transform-origin: 60% 100%;
-    animation: boat-wiggle 370ms infinite;
+    /* animation: boat-wiggle 370ms infinite; */
 }
 
 @keyframes boat-wiggle {
@@ -188,7 +189,7 @@
     width: 100%;
     height: 15%;
     bottom: 0;
-    animation: water 20s;
+    /* animation: water 20s; */
 }
 
 @keyframes water {
@@ -208,7 +209,7 @@
     height: 100%;
     background: url('man_layers_v2/wave.svg');
     background-size: contain;
-    animation: wave 300ms linear infinite;
+    /* animation: wave 300ms linear infinite; */
 }
 
 @keyframes wave {
@@ -224,7 +225,7 @@
 
 .laptop-top {
     transform-origin: bottom right;
-    animation: open-laptop 2s;
+    /* animation: open-laptop 2s; */
 }
 
 @keyframes open-laptop {
@@ -238,12 +239,12 @@
 /* animate left arm opening the laptop */
 .l-arm {
     transform-origin: 79% 13%;
-    animation: l-arm-opening-laptop 4s;
+    /* animation: l-arm-opening-laptop 4s; */
 }
 
 .l-low-arm {
     transform-origin: 77% 46%;
-    animation: l-low-arm-opening-laptop 4s, typing 300ms 4s infinite;
+    /* animation: l-low-arm-opening-laptop 4s, typing 300ms 4s infinite; */
 }
 
 @keyframes l-arm-opening-laptop {
@@ -270,7 +271,7 @@
 
 /* animate typing */
 .r-arm {
-    animation: typing 300ms 4150ms infinite;
+    /* animation: typing 300ms 4150ms infinite; */
 }
 @keyframes typing {
     0%,
