@@ -57,9 +57,9 @@
 .propeller {
     position: absolute;
     width: 16%;
-    height: 53%;
-    bottom: -21%;
-    right: 48%;
+    height: 44%;
+    bottom: -11%;
+    right: 43%;
 }
 
 .propeller img {
@@ -140,7 +140,7 @@
 /* animate propeller turning */
 
 .propeller {
-    animation: propeller 200ms linear infinite;
+    animation: start-propeller 12s, propeller 200ms linear infinite;
 }
 
 @keyframes propeller {
@@ -150,6 +150,18 @@
     }
     50% {
         transform: scale(-1);
+    }
+}
+
+@keyframes start-propeller {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
@@ -271,8 +283,7 @@
 
 /* delay for boat animations  */
 
-.man,
-.propeller {
+.man {
     animation-delay: 7s;
 }
 
