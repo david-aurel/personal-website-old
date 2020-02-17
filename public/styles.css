@@ -21,8 +21,29 @@
 }
 
 /* header */
-header {
-    display: flex;
-    justify-content: flex-start;
+
+.header {
     height: 35vh;
+    margin: 20px;
+}
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    height: 90%;
+}
+
+.animation-wrapper {
+    position: relative;
+    height: 100%;
+    width: 31vh;
+}
+
+.title h1 {
+    font-size: min(7vw, 36px);
+}
+
+.title h3 {
+    font-size: min(4.2vw, 22px);
+    margin: 4px 4px 0 0;
 }

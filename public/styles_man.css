@@ -7,11 +7,14 @@
 /* man positioning */
 
 .animation {
-    position: relative;
-    min-height: 200px;
-    min-width: 280px;
+    position: absolute;
+    height: 150px;
+    width: 210px;
     transform: scale(-1, 1);
+    right: 0;
+    top: 0;
 }
+
 .man {
     position: relative;
     overflow: hidden;
