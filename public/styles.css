@@ -78,3 +78,18 @@ header nav {
     border-bottom: 2px solid var(--yellow);
     padding-bottom: 7px;
 }
+
+/* main */
+main p {
+    line-height: 1.7rem;
+}
+
+.about-me,
+.contact,
+.portfolio {
+    display: none;
+}
+
+.show {
+    display: block;
+}
