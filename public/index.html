@@ -137,17 +137,22 @@
                             quibusdam. Quidem?
                         </p>
                     </div>
-                    <div class="portfolio page show"></div>
+                    <div class="portfolio page show">
+                        <div class="icon">
+                            <img src="icons/back.svg" name="back" alt="" />
+                            <img
+                                src="icons/forward.svg"
+                                name="forward"
+                                alt=""
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
 
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script id="hello" type="text/x-handlebars-template">
-            <div class="icon">
-                <img src="icons/back.svg" alt="">
-                <img src="icons/forward.svg" alt="">
-            </div>
             {{#portfolio}}
             <div class="portfolio-element">
                 <h2>{{title}}</h2>

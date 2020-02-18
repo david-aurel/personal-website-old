@@ -99,15 +99,11 @@ body {
     transition: 500ms;
 }
 
-.show {
-    display: inline-block;
-    width: 33.3%;
-}
-
 .about-me,
 .contact,
 .portfolio {
     display: none;
+    width: 33.3%;
 }
 
 .show {
@@ -118,6 +114,15 @@ main p {
     line-height: 1.7rem;
 }
 
+/* portfolio */
+.icon {
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio-element {
+    display: none;
+}
+
 /* media query */
 @media (min-width: 545px) {
     .flex-header {
@@ -126,4 +131,9 @@ main p {
     .navLinks {
         margin: 20px 0 0 0;
     }
+}
+
+/* active, show etc */
+.show {
+    display: inline-block;
 }
