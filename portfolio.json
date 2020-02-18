@@ -1,1 +1,160 @@
-{ "name": "World" }
+{
+    "portfolio": [
+        {
+            "title": "Connect Four",
+            "overview": "Classic Connect Four: Two players take turns putting pieces on the board, the first player to achieve a row of horizontal, vertical or diagonal pieces wins. Play with the mouse, or press left/right arrows and enter to play with the keyboard. Activate the dark mode by pressing 'n' on the keyboard.",
+            "features": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            ],
+            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "images/test.jpg"
+        },
+        {
+            "title": "GitHub API",
+            "overview": "Enter your github credentials and a github user to search for to see the ten last commit messages of the last 15 repositories the user worked on.",
+            "features": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            ],
+            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "images/test.jpg"
+        },
+        {
+            "title": "Carousel",
+            "overview": "An image carousel that slides through four images of sheep infinitely. Click on the right arrow to jump to the next one or the dots to jump to the corresponding one",
+            "features": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            ],
+            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "images/test.jpg"
+        },
+        {
+            "title": "Spotify Search",
+            "overview": "Enter a search term and choose wether to show results for artists or albums and see 20 results. Scroll down and click on 'more', to load 20 more results. Add '?scroll=infinite' to the url to activate infinite scrolling.",
+            "features": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            ],
+            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "images/test.jpg"
+        },
+        {
+            "title": "Reichstag Page",
+            "overview": "Your typical landing page: A header, a big image, some information and a footer. A popup on page load. A menu appears when you click on the menu icon in the top right corner of the page.",
+            "features": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            ],
+            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "images/test.jpg"
+        },
+        {
+            "title": "Incremental Search",
+            "overview": "Start typing away in the input field and four or less names of countries that match your input will become available for autocompletion.",
+            "features": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            ],
+            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "images/test.jpg"
+        },
+        {
+            "title": "JSON Validation",
+            "overview": "Type some JSON into the input field and click 'Go', the title will turn green if the input was valid JSON format, red if it wasn't.",
+            "features": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            ],
+            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "images/test.jpg"
+        },
+        {
+            "title": "Racing Game",
+            "overview": "A racing game that is played by clicking somewhere on the page. Each racer will move forward a by an unpredictable amount. Use the 'BOOST' button to boost the first racer forward.",
+            "features": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            ],
+            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "images/test.jpg"
+        },
+        {
+            "title": "Panes",
+            "overview": "Two images: Slide the blue bar to the left or right to reveal more of one picture and hide the other.",
+            "features": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            ],
+            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "images/test.jpg"
+        },
+        {
+            "title": "Ticker",
+            "overview": "A news ticker, going across the screen, repeating itself after a while. Hover over the ticker to stop the animation and click on a link to be redirected to the corresponding article.",
+            "features": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            ],
+            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "images/test.jpg"
+        },
+        {
+            "title": "Portfolio",
+            "overview": "The portfolio page you're looking at right now. Go to the home page to get an overview of all projects or click on one to see a large screenshot of the project and a description. Click on it again to launch the project.",
+            "features": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            ],
+            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "images/test.jpg"
+        },
+        {
+            "title": "F.U.N. Song Lyrics",
+            "overview": "Lyrics to the 'F.U.N. Song', appearing in the 'F.U.N' Episode (Season One) of Spongebob Squarepants.",
+            "features": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            ],
+            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "images/test.jpg"
+        },
+        {
+            "title": "Canvas Drawing",
+            "overview": "A drawing made by specifying paths in JavaScript on an HTML canvas element.",
+            "features": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            ],
+            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "images/test.jpg"
+        }
+    ]
+}

@@ -144,7 +144,21 @@
 
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script id="hello" type="text/x-handlebars-template">
-            <h1>Hello {{name}}!</h1>
+            {{#portfolio}}
+                <h2>{{title}}</h2>
+                <img src={{imgUrl}} alt="">
+                <h4 class="subtitle">Overview</h4>
+                <p>{{overview}}</p>
+                <h4 class="subtitle">Features</h4>
+                <ul>
+                    {{#features}}
+                    <li>{{.}}</li>
+                    {{/features}}
+                </ul>
+                <h4 class="subtitle">Technologies</h4>
+                <p>{{technologies}}</p>
+                <a href={{url}}>{{url}}</a>
+            {{/portfolio}}
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
         <script src="script.js"></script>
