@@ -39,7 +39,7 @@
         content.style.transform = 'translateX(' + contentPos + ')';
     });
 
-    // portfolio content rendering
+    // render portfolio content
     axios.get('/portfolio.json').then(function(response) {
         var data = response.data;
         portfolio.innerHTML = Handlebars.templates.hello(data);
