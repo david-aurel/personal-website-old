@@ -85,8 +85,21 @@ body {
 }
 
 /* main */
-main p {
-    line-height: 1.7rem;
+#contentContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#contentWrapper {
+    width: 300%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.show {
+    display: inline-block;
+    width: 33.3%;
 }
 
 .about-me,
@@ -96,9 +109,14 @@ main p {
 }
 
 .show {
-    display: block;
+    display: inline-block;
 }
 
+main p {
+    line-height: 1.7rem;
+}
+
+/* media query */
 @media (min-width: 545px) {
     .flex-header {
         height: auto;
