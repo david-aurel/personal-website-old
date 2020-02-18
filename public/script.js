@@ -22,10 +22,10 @@
 
     document.addEventListener('click', function(e) {
         if (e.target.name == 'forward') {
-            console.log('forward');
+            portfolioSlide('forward');
         }
         if (e.target.name == 'back') {
-            console.log('back');
+            portfolioSlide('back');
         }
         if (e.target.classList == 'navLink') {
             navBarSlide(e);
@@ -58,12 +58,35 @@
         var data = response.data;
         portfolio.innerHTML =
             portfolio.innerHTML + Handlebars.templates.hello(data);
-
-        // forwardIcon.addEventListener('click', function(e) {
-        //     console.log('forwardIcon was clicked');
-        // });
-        // backIcon.addEventListener('click', function(e) {
-        //     console.log('backIcon was clicked');
-        // });
+        var portfolioFirst = document
+            .querySelector('.portfolio-element')
+            .classList.add('show');
     });
+
+    function portfolioSlide(direction) {
+        var portfolioElems = document.querySelectorAll('.portfolio-element');
+        var currentShow = document.querySelector('.portfolio .show');
+        var l = portfolioElems.length;
+
+        if (direction == 'back') {
+            var dir = -1;
+        } else {
+            var dir = 1;
+        }
+
+        for (var i = 0; i < l; i++) {
+            if (portfolioElems[i].classList.contains('show')) {
+                var idx = i + dir;
+                console.log('length:', l, 'i:', i, 'dir:', dir, 'idx:', idx);
+                if (i == l - 1 && dir == 1) {
+                    idx = 0;
+                } else if (i == 0 && dir == -1) {
+                    idx = l - 1;
+                }
+                portfolioElems[idx].classList.add('show');
+                portfolioElems[i].classList.remove('show');
+                break;
+            }
+        }
+    }
 })();
