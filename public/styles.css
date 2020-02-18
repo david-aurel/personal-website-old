@@ -95,6 +95,7 @@ body {
     width: 300%;
     display: flex;
     justify-content: space-between;
+    transition: 500ms;
 }
 
 .show {
