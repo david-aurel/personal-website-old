@@ -1,21 +1,24 @@
 (function() {
+    // handlebars boilerplate compiler
+    Handlebars.templates = Handlebars.templates || {};
+    var templates = document.querySelectorAll(
+        'script[type="text/x-handlebars-template"]'
+    );
+    Array.prototype.slice.call(templates).forEach(function(script) {
+        Handlebars.templates[script.id] = Handlebars.compile(script.innerHTML);
+    });
+    // ////////////////////////////////////
+
+    // querying the dom
     var pages = document.querySelectorAll('.page');
     var nav = document.querySelector('nav');
     var navElems = document.querySelectorAll('.navLink');
     var slider = document.querySelector('.slider');
     var content = document.querySelector('#contentWrapper');
+    var portfolio = document.querySelector('.portfolio');
 
+    // navbar sliding
     nav.addEventListener('click', function(e) {
-        // pages.forEach(function(elem) {});
-        // for (var i = 0; i < navElems.length; i++) {
-        //     if (e.target == navElems[i]) {
-        //         document.querySelector('.show').classList.remove('show');
-        //         pages[i].classList.add('show');
-        //     }
-        // }
-        // var position = e.target.getAttribute('data-pos');
-        // var translateValue = translateX(position);
-
         var sliderPos;
         var contentPos;
         switch (e.target) {
@@ -33,6 +36,12 @@
                 break;
         }
         slider.style.marginLeft = sliderPos;
-        content.style.transform = `translateX(${contentPos})`;
+        content.style.transform = 'translateX(' + contentPos + ')';
+    });
+
+    // portfolio content rendering
+    axios.get('/portfolio.json').then(function(response) {
+        var data = response.data;
+        portfolio.innerHTML = Handlebars.templates.hello(data);
     });
 })();
