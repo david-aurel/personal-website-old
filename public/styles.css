@@ -20,13 +20,26 @@
     color: #ffcd00;
 }
 
-/* header */
-
 body {
     max-width: 600px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
+
+main {
+    flex-grow: 1;
+}
+
+#contentWrapper {
+    height: 100%;
+}
+
+/* header */
+
 .header {
     margin-bottom: 50px;
 }
@@ -34,35 +47,35 @@ body {
 .flex-header {
     display: flex;
     justify-content: space-between;
-
-    height: 175px;
 }
 
 .animation-wrapper {
     position: relative;
-    height: 100px;
-    width: 26vh;
+    min-height: 100px;
+    min-width: 140px;
 }
 
 .title {
-    margin-top: 20px;
 }
 .title h1 {
-    font-size: min(7vw, 36px);
+    font-size: min(6.9vw, 36px);
 }
 
 .title h3 {
-    font-size: min(4.2vw, 22px);
+    font-size: min(4.1vw, 22px);
     margin: 4px 4px 0 0;
 }
 
 /* navbar */
+nav {
+    margin-top: 10px;
+}
+
 .navLinks {
     display: flex;
     height: 30px;
-    margin: 20px auto 0 auto;
+    margin: 0 auto;
     justify-content: space-between;
-    max-width: 300px;
     font-weight: 350;
     font-size: 1.2rem;
     position: relative;
@@ -117,6 +130,7 @@ main p {
 /* portfolio */
 .portfolio {
     position: relative;
+    overflow: scroll;
 }
 
 .icon {
@@ -190,12 +204,15 @@ main p {
 }
 
 /* media query */
-@media (min-width: 545px) {
-    .flex-header {
-        height: auto;
+@media (min-width: 565px) {
+    .animation {
+        height: 141%;
+        width: 141%;
+        right: 0;
     }
     .navLinks {
-        margin: 20px 0 0 0;
+        max-width: 300px;
+        margin: 0;
     }
 }
 

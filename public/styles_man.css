@@ -8,11 +8,9 @@
 
 .animation {
     position: absolute;
-    height: 150px;
-    width: 210px;
+    height: 100%;
+    width: 100%;
     transform: scale(-1, 1);
-    right: -13%;
-    top: 13%;
     overflow: hidden;
 }
 
