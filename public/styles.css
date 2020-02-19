@@ -115,7 +115,7 @@ nav {
 .about-me,
 .contact,
 .portfolio {
-    display: none;
+    display: inline-block;
     width: 33.3%;
 }
 
@@ -136,6 +136,10 @@ main p {
 .icon {
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .portfolio-element {
@@ -147,6 +151,10 @@ main p {
     width: 100%;
     height: 0%;
     overflow: hidden;
+}
+
+.portfolio-element h2 {
+    text-align: center;
 }
 
 .portfolio-slide-in-right {
@@ -217,10 +225,6 @@ main p {
 }
 
 /* active, show etc */
-.show {
-    display: inline-block;
-}
-
 .show-portfolio-element {
     height: auto;
 }
