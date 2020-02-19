@@ -279,6 +279,9 @@ main p {
 }
 .contact-form button {
     margin-bottom: 0;
+    width: 55px;
+    font-weight: bold;
+    padding: 6px;
 }
 
 .form-sender {
@@ -299,6 +302,10 @@ main p {
     flex-grow: 1;
 }
 
+input::placeholder,
+textarea::placeholder {
+    color: var(--blue);
+}
 /* media query */
 @media (min-width: 565px) {
     .animation {
