@@ -19,6 +19,7 @@
     var backIcon = document.querySelector('.icon img:first-of-type');
     var forwardIcon = document.querySelector('.icon img:last-of-type');
     var icon = document.querySelector('.icon');
+    var contactCard = document.querySelector('.contact-card');
 
     document.addEventListener('click', function(e) {
         if (e.target.name == 'forward') {
@@ -53,16 +54,22 @@
         slider.style.marginLeft = sliderPos;
         content.style.transform = 'translateX(' + contentPos + ')';
     }
-    // portfolio
-    axios.get('/portfolio.json').then(function(response) {
+
+    // getting information displayed (axios to get data, then handlebars rendering)
+    axios.get('/data.json').then(function(response) {
         var data = response.data;
+        // portfolio
         portfolio.innerHTML =
-            portfolio.innerHTML + Handlebars.templates.hello(data);
+            portfolio.innerHTML + Handlebars.templates.portfolio(data);
         var portfolioFirst = document
             .querySelector('.portfolio-element')
             .classList.add('show-portfolio-element');
+
+        // contact-card
+        contactCard.innerHTML = Handlebars.templates.contactCard(data);
     });
 
+    // portfolio UX
     function portfolioSlide(direction) {
         var portfolioElems = document.querySelectorAll('.portfolio-element');
         var currentShow = document.querySelector('.portfolio .show');

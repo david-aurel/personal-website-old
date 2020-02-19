@@ -156,5 +156,9 @@
             "url": "https://www.github.com/david-aurel/peppermint_code",
             "imgUrl": "images/test.jpg"
         }
+    ],
+    "contact-card": [
+        { "imgUrl": "icons/linkedin.svg", "value": "David Durlan" },
+        { "imgUrl": "icons/github.svg", "value": "david-aurel" }
     ]
 }

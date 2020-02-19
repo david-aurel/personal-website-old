@@ -1,15 +1,15 @@
 const express = require('express');
 const app = express();
-const portfolio = require('./portfolio.json');
+const data = require('./data.json');
 
 app.use(express.static('public'));
 app.use(express.json());
 
-app.get('/portfolio.json', (req, res) => {
+app.get('/data.json', (req, res) => {
     try {
-        res.json(portfolio);
+        res.json(data);
     } catch (error) {
-        console.log('error in GET /portfolio.json :', error);
+        console.log('error in GET /data.json :', error);
         res.sendStatus(500);
     }
 });
