@@ -236,6 +236,7 @@ main p {
     height: 250px;
     border-radius: 7px;
     padding: 25px;
+    margin-bottom: 30px;
 }
 .contact-card ul {
     padding: 0;
@@ -282,6 +283,7 @@ main p {
     width: 55px;
     font-weight: bold;
     padding: 6px;
+    background: white;
 }
 
 .form-sender {
@@ -319,6 +321,9 @@ textarea::placeholder {
     }
     .contact {
         flex-wrap: nowrap;
+    }
+    .contact-card {
+        margin-bottom: 0;
     }
 }
 
