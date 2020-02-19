@@ -60,7 +60,7 @@
             portfolio.innerHTML + Handlebars.templates.hello(data);
         var portfolioFirst = document
             .querySelector('.portfolio-element')
-            .classList.add('show');
+            .classList.add('show-portfolio-element');
     });
 
     function portfolioSlide(direction) {
@@ -70,21 +70,36 @@
 
         if (direction == 'back') {
             var dir = -1;
+            var slideOut = 'portfolio-slide-out-right';
+            var slideIn = 'portfolio-slide-in-left';
         } else {
             var dir = 1;
+            var slideOut = 'portfolio-slide-out-left';
+            var slideIn = 'portfolio-slide-in-right';
         }
 
         for (var i = 0; i < l; i++) {
-            if (portfolioElems[i].classList.contains('show')) {
+            if (
+                portfolioElems[i].classList.contains('show-portfolio-element')
+            ) {
                 var idx = i + dir;
-                console.log('length:', l, 'i:', i, 'dir:', dir, 'idx:', idx);
                 if (i == l - 1 && dir == 1) {
                     idx = 0;
                 } else if (i == 0 && dir == -1) {
                     idx = l - 1;
                 }
-                portfolioElems[idx].classList.add('show');
-                portfolioElems[i].classList.remove('show');
+                portfolioElems[idx].classList.add(slideIn);
+                portfolioElems[idx].addEventListener(
+                    'animationend',
+                    function() {
+                        this.classList.remove(slideIn);
+                        this.classList.add('show-portfolio-element');
+                    }
+                );
+                portfolioElems[i].classList.add(slideOut);
+                portfolioElems[i].addEventListener('animationend', function() {
+                    this.classList.remove(slideOut, 'show-portfolio-element');
+                });
                 break;
             }
         }
