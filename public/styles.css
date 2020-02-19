@@ -227,12 +227,13 @@ main p {
     display: flex;
     justify-content: space-between;
     align-items: start;
+    flex-wrap: wrap;
 }
 
 .contact-card {
     background: var(--blue);
     min-width: 280px;
-    height: 210px;
+    height: 250px;
     border-radius: 7px;
     padding: 25px;
 }
@@ -252,9 +253,50 @@ main p {
     color: white;
     font-size: 1.6rem;
 }
+.contact-form {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form h4 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
 .contact-form form {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    border: 1px solid var(--blue);
+    border-radius: 7px;
+    padding: 8px;
+    margin: 4px 0;
+}
+.contact-form button {
+    margin-bottom: 0;
+}
+
+.form-sender {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.form-sender input:first-of-type {
+    width: 40%;
+}
+.form-sender input:last-of-type {
+    width: 58%;
+}
+
+.contact-form textarea {
+    resize: none;
+    flex-grow: 1;
 }
 
 /* media query */
@@ -267,6 +309,9 @@ main p {
     .navLinks {
         max-width: 300px;
         margin: 0;
+    }
+    .contact {
+        flex-wrap: nowrap;
     }
 }
 
