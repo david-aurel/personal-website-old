@@ -224,6 +224,37 @@ main p {
 /* contact */
 .contact {
     overflow: scroll;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.contact-card {
+    background: var(--blue);
+    min-width: 280px;
+    height: 210px;
+    border-radius: 7px;
+    padding: 25px;
+}
+.contact-card ul {
+    padding: 0;
+}
+.contact-card li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-card img {
+    width: 50px;
+    margin-right: 20px;
+}
+.contact-card p {
+    color: white;
+    font-size: 1.6rem;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
 }
 
 /* media query */
