@@ -1,6 +1,18 @@
 {
     "portfolio": [
         {
+            "title": "Social Network",
+            "overview": "React based social network. Users can friend other users and have a live chat",
+            "features": [
+                "Registration: Users can sign up. Their data is stored in a PostgreSQL Database ",
+                "",
+                ""
+            ],
+            "technologies": "",
+            "url": "",
+            "imgUrl": ""
+        },
+        {
             "title": "Connect Four",
             "overview": "Classic Connect Four: Two players take turns putting pieces on the board, the first player to achieve a row of horizontal, vertical or diagonal pieces wins. Play with the mouse, or press left/right arrows and enter to play with the keyboard. Activate the dark mode by pressing 'n' on the keyboard.",
             "features": [
