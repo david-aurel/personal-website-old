@@ -42,7 +42,8 @@ video {
 }
 /* cursor */
 
-.navLink {
+.navLink,
+.icon {
     cursor: pointer;
 }
 
@@ -278,7 +279,7 @@ main p {
 
 .contact-card {
     background: var(--blue);
-    min-width: 280px;
+    width: 100%;
     height: 250px;
     border-radius: 7px;
     padding: 25px;
@@ -301,7 +302,7 @@ main p {
     font-size: 1.6rem;
 }
 .contact-form {
-    width: 250px;
+    width: 100%;
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -370,6 +371,7 @@ textarea::placeholder {
     }
     .contact-card {
         margin-bottom: 0;
+        margin-right: 30px;
     }
 }
 
