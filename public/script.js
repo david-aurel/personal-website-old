@@ -69,6 +69,8 @@
         contactCard.innerHTML = Handlebars.templates.contactCard(data);
     });
 
+    // contact me post request
+
     // portfolio UX
     function portfolioSlide(direction) {
         var portfolioElems = document.querySelectorAll('.portfolio-element');
