@@ -163,19 +163,21 @@
         <script id="portfolio" type="text/x-handlebars-template">
             {{#portfolio}}
             <div class="portfolio-element">
-                <h2>{{title}}</h2>
-                <img src={{imgUrl}} alt="">
-                <h4 class="subtitle">Overview</h4>
-                <p>{{overview}}</p>
-                <h4 class="subtitle">Features</h4>
-                <ul>
-                    {{#features}}
-                    <li>{{.}}</li>
-                    {{/features}}
-                </ul>
-                <h4 class="subtitle">Technologies</h4>
-                <p>{{technologies}}</p>
-                <a href={{url}}>{{url}}</a>
+                <div class="portfolio-element-content">
+                    <h2>{{title}}</h2>
+                    <video src={{imgUrl}} type="video/mp4" autoplay muted loop controls></video>
+                    <!-- <h4 class="subtitle">Overview</h4> -->
+                    <p>{{overview}}</p>
+                    <a href={{url}}>{{url}}</a>
+                    <!-- <h4 class="subtitle">Features</h4> -->
+                    <p class="technologies">{{technologies}}</p>
+                    <ul>
+                        {{#features}}
+                        <li><span class="feature-title">{{feature-title}}</span>: <span>{{feature-text}}</span></li>
+                        {{/features}}
+                    </ul>
+                    <!-- <h4 class="subtitle">Technologies</h4> -->
+                </div>
             </div>
             {{/portfolio}}
         </script>

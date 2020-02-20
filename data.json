@@ -2,15 +2,52 @@
     "portfolio": [
         {
             "title": "Social Network",
-            "overview": "React based social network. Users can friend other users and have a live chat",
+            "overview": "A React Redux based single page application. Users can interact with other users.",
             "features": [
-                "Registration: Users can sign up. Their data is stored in a PostgreSQL Database ",
-                "",
-                ""
+                {
+                    "feature-title": "Registration",
+                    "feature-text": "Users can sign up. Their data is stored in a PostgreSQL Database. Their password is salted, hashed and encrpypted."
+                },
+                {
+                    "feature-title": "Log in",
+                    "feature-text": "Users who already signed up previously can quickly log in"
+                },
+                {
+                    "feature-title": "Log out",
+                    "feature-text": "Users can logout"
+                },
+                {
+                    "feature-title": "Forgot password",
+                    "feature-text": "Users who forgot their password can reset it. A code is being sent to their email, if they verify using the code, they can enter a new password. "
+                },
+                {
+                    "feature-title": "Edit own profile",
+                    "feature-text": "Users can upload and edit information about themselves such as their name, a profile picture and a bio. The profile picture is uploaded to AWS S3, a reference gets stored in the Database."
+                },
+                {
+                    "feature-title": "Search for other users",
+                    "feature-text": "Users can search for other users by name or browse a selection of users who recently joined."
+                },
+                {
+                    "feature-title": "Friend functionality",
+                    "feature-text": "Users can send friend requests to other users. They have the option to cancel a friend request. Pending friend requests can be either answered by accepting or deleting them. Existing friendships can be ended. Users who are friends, can view each others friends list."
+                },
+                {
+                    "feature-title": "Live Chat",
+                    "feature-text": "Users can enter a site wide live chat and message other users. This is accomplished by using web sockets with socket.io"
+                },
+                {
+                    "feature-title": "Security",
+                    "feature-text": "Protected from csurf type attacks and SQL injections"
+                },
+                {
+                    "feature-title": "Cookies",
+                    "feature-text": "Browser remembers logged in / logged out state"
+                }
             ],
-            "technologies": "",
-            "url": "",
-            "imgUrl": ""
+            "technologies": "HTML, CSS, JavaScript, Node, Express, PostgreSQL, Redis, Jest, Babel, Webpack, React, Redux, AWS SDK, AWS S3, AWS SES, Axios, Socket.io, Multer, Bcrypt, Cookie Session, Csurf, Git, GitHub ",
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "images/socialnetwork.mp4"
         },
         {
             "title": "Connect Four",
