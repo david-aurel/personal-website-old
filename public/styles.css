@@ -39,6 +39,12 @@ main {
     overflow: hidden;
 }
 
+/* cursor */
+
+.navLink {
+    cursor: pointer;
+}
+
 /* header */
 
 .header {
@@ -134,20 +140,20 @@ main p {
 
 /* portfolio */
 .portfolio {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     position: relative;
+    grid-column-gap: 20px;
+}
+
+.portfolio-element-wrapper {
+    height: 100%;
     overflow: scroll;
+    position: relative;
 }
 
 .icon {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.icon img {
     background: white;
     width: 12px;
 }
@@ -241,7 +247,7 @@ main p {
 .contact-card ul {
     padding: 0;
 }
-.contact-card li {
+.contact-card a {
     display: flex;
     align-items: center;
     margin-bottom: 20px;

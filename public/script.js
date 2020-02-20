@@ -15,7 +15,7 @@
     var navElems = document.querySelectorAll('.navLink');
     var slider = document.querySelector('.slider');
     var content = document.querySelector('#contentWrapper');
-    var portfolio = document.querySelector('.portfolio');
+    var portfolio = document.querySelector('.portfolio-element-wrapper');
     var backIcon = document.querySelector('.icon img:first-of-type');
     var forwardIcon = document.querySelector('.icon img:last-of-type');
     var icon = document.querySelector('.icon');

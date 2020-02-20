@@ -83,36 +83,25 @@
             <div id="contentContainer">
                 <div id="contentWrapper">
                     <div class="about-me page">
-                        <h1>THIS IS THE ABOUT ME PAGE</h1>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Deserunt blanditiis necessitatibus velit vel. Voluptatem
-                        perferendis ad dolorum sequi nesciunt inventore iste
-                        voluptas ex? Ut distinctio cum, accusantium dolores quis
-                        nulla qui fuga autem laudantium odio repudiandae
-                        possimus saepe odit et eum expedita repellendus
-                        necessitatibus ipsum nihil amet eaque animi sapiente.
-                        Consequuntur voluptates esse veritatis ut, minus quia
-                        quam? Provident numquam architecto ut! Fugiat corrupti
-                        recusandae debitis quam culpa ut hic deserunt
-                        reprehenderit dignissimos nihil sequi ullam sit enim,
-                        excepturi molestias suscipit asperiores tempore.
-                        Corrupti, consectetur natus expedita voluptatibus
-                        blanditiis ducimus provident! Ea minus incidunt, animi
-                        repellat adipisci repudiandae dolor commodi quae
-                        accusantium impedit dignissimos quas fugiat facilis
-                        nobis recusandae, unde culpa nihil reprehenderit? Esse
-                        tenetur reiciendis quam aspernatur magnam a ut incidunt
-                        quasi doloribus rem repellendus vel at, ratione aperiam
-                        quos, suscipit similique? Eum amet repellendus, nulla
-                        accusantium ullam, quasi nobis doloremque dolorem animi
-                        nam reprehenderit in aspernatur. Optio a, eligendi
-                        quidem unde repudiandae iure dicta, dolores mollitia
-                        beatae voluptas autem eaque nostrum delectus? Laborum
-                        possimus ea quis distinctio minus? Dolore, sint ipsa?
-                        Provident velit corporis beatae magni expedita
-                        doloremque incidunt corrupti suscipit itaque. Error,
-                        nemo. Quia reprehenderit at voluptatibus in eligendi,
-                        quidem quas nobis illo, labore, eaque autem consectetur!
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Deserunt blanditiis necessitatibus velit vel.
+                            Voluptatem perferendis ad dolorum sequi nesciunt
+                            inventore iste voluptas ex? Ut distinctio cum,
+                            accusantium dolores quis nulla qui fuga autem
+                            laudantium odio repudiandae possimus saepe odit et
+                            eum expedita repellendus necessitatibus ipsum nihil
+                            amet eaque animi sapiente. Consequuntur voluptates
+                            esse veritatis ut, minus quia quam? Provident
+                            numquam architecto ut! Fugiat corrupti recusandae
+                            debitis quam culpa ut hic deserunt reprehenderit
+                            dignissimos nihil sequi ullam sit enim, excepturi
+                            molestias suscipit asperiores tempore. Corrupti,
+                            consectetur natus expedita voluptatibus blanditiis
+                            ducimus provident! Ea minus incidunt, animi repellat
+                            adipisci repudiandae dolor commodi quae accusantium
+                            impedit dignissimos quas fugiat facilis nobis !
+                        </p>
                     </div>
                     <div class="contact page">
                         <div class="contact-card"></div>
@@ -152,14 +141,19 @@
                         </div>
                     </div>
                     <div class="portfolio page">
-                        <div class="icon">
-                            <img src="icons/back.svg" name="back" alt="" />
-                            <img
-                                src="icons/forward.svg"
-                                name="forward"
-                                alt=""
-                            />
-                        </div>
+                        <img
+                            src="icons/back.svg"
+                            name="back"
+                            alt=""
+                            class="icon"
+                        />
+                        <div class="portfolio-element-wrapper"></div>
+                        <img
+                            src="icons/forward.svg"
+                            name="forward"
+                            alt=""
+                            class="icon"
+                        />
                     </div>
                 </div>
             </div>
@@ -190,8 +184,10 @@
             <ul>
                 {{#contact-card}}
                 <li>
-                    <img src={{imgUrl}} alt="">
-                    <p>{{value}}</p>
+                    <a href={{url}} target="_blank">
+                        <img src={{imgUrl}} alt="">
+                        <p>{{value}}</p>
+                    </a>
                 </li>
                 {{/contact-card}}
             </ul>

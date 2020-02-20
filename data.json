@@ -158,7 +158,15 @@
         }
     ],
     "contact-card": [
-        { "imgUrl": "icons/linkedin.svg", "value": "David Durlan" },
-        { "imgUrl": "icons/github.svg", "value": "david-aurel" }
+        {
+            "url": "https://www.linkedin.com/in/daviddurlan/",
+            "imgUrl": "icons/linkedin.svg",
+            "value": "David Durlan"
+        },
+        {
+            "url": "https://github.com/david-aurel",
+            "imgUrl": "icons/github.svg",
+            "value": "david-aurel"
+        }
     ]
 }
