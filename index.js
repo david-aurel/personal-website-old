@@ -39,6 +39,11 @@ app.post('/contact-me', (req, res) => {
         res.sendStatus(500);
     }
 });
+
+app.get('/animation', (req, res) => {
+    res.sendFile(__dirname + '/public/animation.html');
+});
+
 app.get('*', (req, res) => {
     res.sendFile(__dirname + '/public/index.html');
 });
