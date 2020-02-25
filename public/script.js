@@ -20,6 +20,7 @@
     var forwardIcon = document.querySelector('.icon img:last-of-type');
     var icon = document.querySelector('.icon');
     var contactCard = document.querySelector('.contact-card');
+    var aboutMe = document.querySelector('.about-me');
 
     document.addEventListener('click', function(e) {
         if (e.target.name == 'forward') {
@@ -67,6 +68,9 @@
 
         // contact-card
         contactCard.innerHTML = Handlebars.templates.contactCard(data);
+
+        // about-me
+        aboutMe.innerHTML = Handlebars.templates.aboutMe(data);
     });
 
     // contact me post request

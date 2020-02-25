@@ -14,7 +14,7 @@
             <div class="flex-header">
                 <div class="title">
                     <h1 class="red">David Durlan,</h1>
-                    <h3 class="red">frontend engineer</h3>
+                    <h3 class="red">frontend engineer.</h3>
                 </div>
                 <a href="/animation">
                 <div class="animation-wrapper">
@@ -85,25 +85,7 @@
             <div id="contentContainer">
                 <div id="contentWrapper">
                     <div class="about-me page">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Deserunt blanditiis necessitatibus velit vel.
-                            Voluptatem perferendis ad dolorum sequi nesciunt
-                            inventore iste voluptas ex? Ut distinctio cum,
-                            accusantium dolores quis nulla qui fuga autem
-                            laudantium odio repudiandae possimus saepe odit et
-                            eum expedita repellendus necessitatibus ipsum nihil
-                            amet eaque animi sapiente. Consequuntur voluptates
-                            esse veritatis ut, minus quia quam? Provident
-                            numquam architecto ut! Fugiat corrupti recusandae
-                            debitis quam culpa ut hic deserunt reprehenderit
-                            dignissimos nihil sequi ullam sit enim, excepturi
-                            molestias suscipit asperiores tempore. Corrupti,
-                            consectetur natus expedita voluptatibus blanditiis
-                            ducimus provident! Ea minus incidunt, animi repellat
-                            adipisci repudiandae dolor commodi quae accusantium
-                            impedit dignissimos quas fugiat facilis nobis !
-                        </p>
+                    <!-- Handlebars injection goes here -->
                     </div>
                     <div class="contact page">
                         <div class="contact-card">
@@ -210,6 +192,12 @@
                 {{/contact-card}}
             </ul>
         </script>
+        
+        <script id='aboutMe' type="text/x-handlebars-template">
+            <p>{{about-me}}</p>
+        </script>
+
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
         <script src="script.js"></script>
     </body>

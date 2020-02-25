@@ -3,7 +3,7 @@
         {
             "title": "Social Network",
             "description": "A single page application for users to interact with other users, built in React.",
-            "text": "This was the first time I was using React and I loved it! It was a real melon twister to wrap my head around, especially later on when I started using Redux and Socket.io, but it was so much fun and I'm very happy with how it turned out. When it came to design, I styled it mobile first from scratch, drawing my own icons and everything. May or may not look familiar, but sometimes the best thing you can do is a master copy.",
+            "text": "This was the first time I was using React and I loved it! It was a real melon twister to wrap my head around, especially later on when I started using Redux and Socket.io, but it was so much fun and I'm very happy with how it turned out. When it came to design, I styled it mobile first from scratch, drawing my own icons and everything. May or may not look familiar, but sometimes the smartest thing you can do is a master copy.",
             "multiple-bullets": true,
             "bullet-points": [
                 [
@@ -130,5 +130,6 @@
             "imgUrl": "icons/github.svg",
             "value": "david-aurel"
         }
-    ]
+    ],
+    "about-me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu tristique leo, nec placerat lectus. Morbi in congue urna. Mauris in justo vel massa tempus interdum ac at nulla. Fusce lacinia accumsan sapien in facilisis. Nam pretium, elit non commodo varius, nisl libero tempor justo, et consequat metus justo eget dui. Integer sed ex porta, pretium libero et, cursus lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ante mauris, varius nec dapibus sit amet, pretium sed orci. Fusce sit amet auctor turpis. Integer eu ultricies magna. Pellentesque pellentesque accumsan velit, at varius mi bibendum quis. Aenean consequat ligula leo, quis interdum dui interdum sit amet. Aenean porta mauris eu ipsum accumsan placerat id sed elit."
 }
