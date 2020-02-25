@@ -174,6 +174,8 @@
                     <video src={{imgUrl}} type="video/mp4" autoplay muted loop controls></video>
                     <p class="portfolio-description">{{description}}</p>
                     <p>{{text}}</p>
+                    {{#if bullet-points}}
+                    <h4>Features:</h4>
                     {{#if multiple-bullets}}
                     {{#bullet-points}}
                     <ul>
@@ -188,6 +190,7 @@
                         <li><span>{{.}}</span></li>
                         {{/bullet-points}}
                     </ul>
+                    {{/if}}
                     {{/if}}
                     <a href={{url}} target="_blank">{{url}}</a>
                 </div>
