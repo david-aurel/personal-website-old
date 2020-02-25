@@ -37,8 +37,8 @@ li {
     margin: 20px 0px;
 }
 video {
+    height: 100%;
     width: 100%;
-    margin: 20px 0 30px 0;
 }
 /* cursor */
 

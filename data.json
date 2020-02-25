@@ -47,7 +47,7 @@
             ],
             "technologies": "HTML, CSS, JavaScript, Node, Express, PostgreSQL, Redis, Jest, Babel, Webpack, React, Redux, AWS SDK, AWS S3, AWS SES, Axios, Socket.io, Multer, Bcrypt, Cookie Session, Csurf, Git, GitHub ",
             "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "images/socialnetwork.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/socialnetwork.mp4"
         },
         {
             "title": "Connect Four",
@@ -59,7 +59,7 @@
             ],
             "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
             "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "images/connect_four.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/connect_four.mp4"
         },
         {
             "title": "Quiz",
@@ -71,7 +71,7 @@
             ],
             "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
             "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "images/fragebogen.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/fragebogen.mp4"
         },
         {
             "title": "Image Board",
@@ -83,7 +83,7 @@
             ],
             "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
             "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "images/image_board.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/image_board.mp4"
         },
         {
             "title": "Petition",
@@ -95,7 +95,7 @@
             ],
             "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
             "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "images/petition.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/petition.mp4"
         },
         {
             "title": "GitHub API",
@@ -107,7 +107,7 @@
             ],
             "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
             "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "images/github_api.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/github_api.mp4"
         },
         {
             "title": "Carousel",
@@ -119,7 +119,7 @@
             ],
             "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
             "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "images/carousel.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/carousel.mp4"
         },
         {
             "title": "Spotify Search",
@@ -131,7 +131,7 @@
             ],
             "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
             "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "images/spotify.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/spotify.mp4"
         },
         {
             "title": "Incremental Search",
@@ -143,7 +143,7 @@
             ],
             "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
             "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "images/incremental_search.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/incremental_search.mp4"
         },
         {
             "title": "JSON Validation",
@@ -155,7 +155,7 @@
             ],
             "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
             "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "images/json_validator.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/json_validator.mp4"
         },
         {
             "title": "Ticker",
@@ -167,19 +167,7 @@
             ],
             "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
             "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "images/ticker.mp4"
-        },
-        {
-            "title": "Personal Website",
-            "overview": "The portfolio page you're looking at right now. Go to the home page to get an overview of all projects or click on one to see a large screenshot of the project and a description. Click on it again to launch the project.",
-            "features": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
-            ],
-            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-            "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "images/personal_website.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/ticker.mp4"
         }
     ],
     "contact-card": [
