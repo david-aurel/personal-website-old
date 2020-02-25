@@ -13,8 +13,8 @@
         <header class="header">
             <div class="flex-header">
                 <div class="title">
-                    <h1 class="red">Hi, I'm David!</h1>
-                    <h3 class="red">design lover, front end engineer.</h3>
+                    <h1 class="red">David Durlan,</h1>
+                    <h3 class="red">frontend engineer</h3>
                 </div>
                 <a href="/animation">
                 <div class="animation-wrapper">
@@ -106,7 +106,9 @@
                         </p>
                     </div>
                     <div class="contact page">
-                        <div class="contact-card"></div>
+                        <div class="contact-card">
+                            <!-- Handlebars injection goes here -->
+                        </div>
                         <div class="contact-form">
                             <h4>...Or write me here!</h4>
                             <form action="/contact-me" method="POST">
@@ -149,7 +151,9 @@
                             alt=""
                             class="icon"
                         />
-                        <div class="portfolio-element-wrapper"></div>
+                        <div class="portfolio-element-wrapper">
+                            <!-- Handlebars injection goes here -->
+                        </div>
                         <img
                             src="icons/forward.svg"
                             name="forward"
@@ -167,22 +171,25 @@
             <div class="portfolio-element">
                 <div class="portfolio-element-content">
                     <h2>{{title}}</h2>
-                    <!-- <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/ySaQxR4q98M?&modestbranding=1&controls=0&autoplay=1" frameborder="0"></iframe>
-                    </div> -->
-
                     <video src={{imgUrl}} type="video/mp4" autoplay muted loop controls></video>
-                    <!-- <h4 class="subtitle">Overview</h4> -->
-                    <p>{{overview}}</p>
-                    <a href={{url}}>{{url}}</a>
-                    <!-- <h4 class="subtitle">Features</h4> -->
-                    <p class="technologies">{{technologies}}</p>
+                    <p class="portfolio-description">{{description}}</p>
+                    <p>{{text}}</p>
+                    {{#if multiple-bullets}}
+                    {{#bullet-points}}
                     <ul>
-                        {{#features}}
-                        <li><span class="feature-title">{{feature-title}}</span>: <span>{{feature-text}}</span></li>
-                        {{/features}}
+                        {{#this}}
+                        <li><span>{{this}}</span></li>
+                        {{/this}}
                     </ul>
-                    <!-- <h4 class="subtitle">Technologies</h4> -->
+                    {{/bullet-points}}
+                    {{else}}
+                    <ul>
+                        {{#bullet-points}}
+                        <li><span>{{.}}</span></li>
+                        {{/bullet-points}}
+                    </ul>
+                    {{/if}}
+                    <a href={{url}} target="_blank">{{url}}</a>
                 </div>
             </div>
             {{/portfolio}}

@@ -180,15 +180,18 @@ main p {
 
 .portfolio-element h2 {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-.portfolio-element img {
+.portfolio-element video {
     margin-bottom: 25px;
 }
 
 .portfolio-element p {
     margin-bottom: 20px;
+}
+.portfolio-description {
+    font-weight: bold;
 }
 
 .portfolio-element a {
@@ -203,16 +206,8 @@ main p {
     word-break: break-all;
 }
 
-.feature-title {
-    font-weight: bold;
-}
-
-.technologies {
-    border-radius: 10px;
-    border: 1px solid var(--blue);
-    padding: 10px;
-    font-style: italic;
-    margin: 30px 0;
+.portfolio-element ul {
+    margin-bottom: 50px;
 }
 
 .portfolio-slide-in-right {

@@ -2,170 +2,111 @@
     "portfolio": [
         {
             "title": "Social Network",
-            "overview": "A React Redux based single page application. Users can interact with other users.",
-            "features": [
-                {
-                    "feature-title": "Registration",
-                    "feature-text": "Users can sign up. Their data is stored in a PostgreSQL Database. Their password is salted, hashed and encrpypted."
-                },
-                {
-                    "feature-title": "Log in",
-                    "feature-text": "Users who already signed up previously can quickly log in"
-                },
-                {
-                    "feature-title": "Log out",
-                    "feature-text": "Users can logout"
-                },
-                {
-                    "feature-title": "Forgot password",
-                    "feature-text": "Users who forgot their password can reset it. A code is being sent to their email, if they verify using the code, they can enter a new password. "
-                },
-                {
-                    "feature-title": "Edit own profile",
-                    "feature-text": "Users can upload and edit information about themselves such as their name, a profile picture and a bio. The profile picture is uploaded to AWS S3, a reference gets stored in the Database."
-                },
-                {
-                    "feature-title": "Search for other users",
-                    "feature-text": "Users can search for other users by name or browse a selection of users who recently joined."
-                },
-                {
-                    "feature-title": "Friend functionality",
-                    "feature-text": "Users can send friend requests to other users. They have the option to cancel a friend request. Pending friend requests can be either answered by accepting or deleting them. Existing friendships can be ended. Users who are friends, can view each others friends list."
-                },
-                {
-                    "feature-title": "Live Chat",
-                    "feature-text": "Users can enter a site wide live chat and message other users. This is accomplished by using web sockets with socket.io"
-                },
-                {
-                    "feature-title": "Security",
-                    "feature-text": "Protected from csurf type attacks and SQL injections"
-                },
-                {
-                    "feature-title": "Cookies",
-                    "feature-text": "Browser remembers logged in / logged out state"
-                }
+            "description": "A single page application for users to interact with other users, built in React.",
+            "multiple-bullets": true,
+            "bullet-points": [
+                [
+                    "Node.js with Express and a SQL database backend",
+                    "Storing user information in SQL, uploading profile pictures to AWS S3",
+                    "Authentication with Node, Bcrypt and Cookie-Session, where the cookies are protected from malicious tampering with using a csurf package",
+                    "Reset password functionality: A key with an expiration date gets stored in a Redis Database and gets send out via AWS SES. If the entered key checks out, the user can change the password.",
+                    "Edit profile functionality",
+                    "Find other users functionality",
+                    "Friend other users functionality with SQL in the back and React in the front",
+                    "Live Chat with socket.io"
+                ],
+                [
+                    "React Redux frontend",
+                    "UI master copy of Instagram with CSS",
+                    "Mobile first"
+                ]
             ],
-            "technologies": "HTML, CSS, JavaScript, Node, Express, PostgreSQL, Redis, Jest, Babel, Webpack, React, Redux, AWS SDK, AWS S3, AWS SES, Axios, Socket.io, Multer, Bcrypt, Cookie Session, Csurf, Git, GitHub ",
-            "url": "https://www.github.com/david-aurel/peppermint_code",
+
+            "url": "https://www.github.com/david-aurel/social_network",
             "imgUrl": "https://daviddurlan.s3.amazonaws.com/socialnetwork.mp4"
         },
         {
             "title": "Connect Four",
-            "overview": "Classic Connect Four: Two players take turns putting pieces on the board, the first player to achieve a row of horizontal, vertical or diagonal pieces wins. Play with the mouse, or press left/right arrows and enter to play with the keyboard. Activate the dark mode by pressing 'n' on the keyboard.",
-            "features": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            "description": "Classic two player connect four game, built in Javascript with jQuery.",
+            "bullet-points": [
+                "Game logic for moving the pieces and determining when a win has occured using Javascript with jQuery.",
+                "Intuitive UX with CSS animations",
+                "Strong focus on accessibility"
             ],
-            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
             "url": "https://www.github.com/david-aurel/peppermint_code",
             "imgUrl": "https://daviddurlan.s3.amazonaws.com/connect_four.mp4"
         },
         {
-            "title": "Quiz",
-            "overview": "Classic Connect Four: Two players take turns putting pieces on the board, the first player to achieve a row of horizontal, vertical or diagonal pieces wins. Play with the mouse, or press left/right arrows and enter to play with the keyboard. Activate the dark mode by pressing 'n' on the keyboard.",
-            "features": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            "title": "Metric Converter",
+            "description": "Tool to convert units like km, miles, liter, cups, ˚C, ˚F, € and $, vanilla Javascript",
+            "bullet-points": [
+                "Javascript DOM manipulation to display the results",
+                "The conversion rate for the currencies come from a currency API"
             ],
-            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-            "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "https://daviddurlan.s3.amazonaws.com/fragebogen.mp4"
-        },
-        {
-            "title": "Image Board",
-            "overview": "Classic Connect Four: Two players take turns putting pieces on the board, the first player to achieve a row of horizontal, vertical or diagonal pieces wins. Play with the mouse, or press left/right arrows and enter to play with the keyboard. Activate the dark mode by pressing 'n' on the keyboard.",
-            "features": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
-            ],
-            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-            "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "https://daviddurlan.s3.amazonaws.com/image_board.mp4"
+            "url": "https://www.github.com/david-aurel/converter",
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/converter.mp4"
         },
         {
             "title": "Petition",
-            "overview": "Classic Connect Four: Two players take turns putting pieces on the board, the first player to achieve a row of horizontal, vertical or diagonal pieces wins. Play with the mouse, or press left/right arrows and enter to play with the keyboard. Activate the dark mode by pressing 'n' on the keyboard.",
-            "features": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            "description": "A page for signing a petition, all done with Node.js, Express and Handlebars.",
+            "multiple-bullets": true,
+            "bullet-points": [
+                [
+                    "Node Express and SQL database backend",
+                    "Authentication with Node, Bcrypt and Cookie-Session, where the cookies are protected from malicious tampering with using a csurf package",
+                    "Edit profile functionality",
+                    "Signature, using a HTML Canvas Element and Javascript",
+                    "See other signers name, age, city, message etc.",
+                    "Delete your signature functionality"
+                ],
+                ["Styled using bootstrap 4"]
             ],
-            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "url": "https://www.github.com/david-aurel/petition",
             "imgUrl": "https://daviddurlan.s3.amazonaws.com/petition.mp4"
         },
         {
-            "title": "GitHub API",
-            "overview": "Enter your github credentials and a github user to search for to see the ten last commit messages of the last 15 repositories the user worked on.",
-            "features": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            "title": "Image Board",
+            "description": "A single page application image board with comment functionality, built in Vue.js",
+            "bullet-points": [
+                "A Node Express and SQL database backend",
+                "New images get handled using Multer, then uploaded to AWS S3, a reference gets stored in the database",
+                "The image board displayes the 20 most recent pictures, upon scrolling down more images are being loaded and displayed",
+                "Navigation is provided with hash routing",
+                "Useres can write comments on individal images",
+                "Users can delete images"
             ],
-            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-            "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "https://daviddurlan.s3.amazonaws.com/github_api.mp4"
+            "url": "https://www.github.com/david-aurel/image_board",
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/image_board.mp4"
         },
         {
-            "title": "Carousel",
-            "overview": "An image carousel that slides through four images of sheep infinitely. Click on the right arrow to jump to the next one or the dots to jump to the corresponding one",
-            "features": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            "title": "Quiz",
+            "description": "A digitalized experience of Max Frisch's Book \"Fragebogen\" from 1988, a succession of philosophical questions",
+            "bullet-points": [
+                "A Node Express backend",
+                "Utilizing Node's core \"fs\"-module, user information gets stored in server side JSON files",
+                "Users can browse different chapters",
+                "Strictly translating the cover, text and overall layout of the original book with CSS"
             ],
-            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-            "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "https://daviddurlan.s3.amazonaws.com/carousel.mp4"
-        },
-        {
-            "title": "Spotify Search",
-            "overview": "Enter a search term and choose wether to show results for artists or albums and see 20 results. Scroll down and click on 'more', to load 20 more results. Add '?scroll=infinite' to the url to activate infinite scrolling.",
-            "features": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
-            ],
-            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-            "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "https://daviddurlan.s3.amazonaws.com/spotify.mp4"
+            "url": "https://www.github.com/david-aurel/fragebogen",
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/fragebogen.mp4"
         },
         {
             "title": "Incremental Search",
-            "overview": "Start typing away in the input field and four or less names of countries that match your input will become available for autocompletion.",
-            "features": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
-            ],
-            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
+            "description": "Show list of countries that match the user's input, done in vanilla Javascript",
             "url": "https://www.github.com/david-aurel/peppermint_code",
             "imgUrl": "https://daviddurlan.s3.amazonaws.com/incremental_search.mp4"
         },
         {
-            "title": "JSON Validation",
-            "overview": "Type some JSON into the input field and click 'Go', the title will turn green if the input was valid JSON format, red if it wasn't.",
-            "features": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
+            "title": "Live Ticker",
+            "description": "A ticker, showing links crawling across the screen",
+            "bullet-points": [
+                "A list of links is being moved across the screen with vanilla Javascript code, so that it loops",
+                "Refactored the code to accept an argument for the direction of the movement",
+                "Refactored the code using jQuery",
+                "Replaced the list of links with results from the Twitter API",
+                "Implemented the functionality to get results from multiple twitter accounts, rather than just one",
+                "Refactored the code to obtain the results from different sources simultaniously"
             ],
-            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-            "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "https://daviddurlan.s3.amazonaws.com/json_validator.mp4"
-        },
-        {
-            "title": "Ticker",
-            "overview": "A news ticker, going across the screen, repeating itself after a while. Hover over the ticker to stop the animation and click on a link to be redirected to the corresponding article.",
-            "features": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell"
-            ],
-            "technologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non velit ipsum. Phasellus venenatis lacinia ipsum non tempus. Integer at quam ut dui lacinia porta in vitae dui. Nam ut mollis tell",
             "url": "https://www.github.com/david-aurel/peppermint_code",
             "imgUrl": "https://daviddurlan.s3.amazonaws.com/ticker.mp4"
         }
