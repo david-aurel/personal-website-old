@@ -1,0 +1,135 @@
+{
+    "portfolio": [
+        {
+            "title": "Social Network",
+            "description": "A single page application for users to interact with other users, built in React.",
+            "text": "This was the first time I was using React and I loved it! It was a real melon twister to wrap my head around, especially later on when I started using Redux and Socket.io, but it was so much fun and I'm very happy with how it turned out. When it came to design, I styled it mobile first from scratch, drawing my own icons and everything. May or may not look familiar, but sometimes the smartest thing you can do is a master copy.",
+            "multiple-bullets": true,
+            "bullet-points": [
+                [
+                    "Node.js with Express and a SQL database backend",
+                    "Storing user information in SQL, uploading profile pictures to AWS S3",
+                    "Authentication with Node, Bcrypt and Cookie-Session, where the cookies are protected from malicious tampering with using a csurf package",
+                    "Reset password functionality: A key with an expiration date gets stored in a Redis Database and gets send out via AWS SES. If the entered key checks out, the user can change the password.",
+                    "Edit profile functionality",
+                    "Find other users functionality",
+                    "Friend other users functionality with SQL in the back and React in the front",
+                    "Live Chat with socket.io"
+                ],
+                [
+                    "React Redux frontend",
+                    "UI master copy of Instagram with CSS",
+                    "Mobile first"
+                ]
+            ],
+
+            "url": "https://www.github.com/david-aurel/social_network",
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/socialnetwork.mp4"
+        },
+        {
+            "title": "Connect Four",
+            "description": "Classic two player connect four game, built in Javascript with jQuery.",
+            "text": "This was my favorite project to make, ever! It was one of those weekends where I was so immersed I almost forgot to eat. There were a lot of challenging parts to this one, for example, figuring out when somebody's won diagonally! I wanted to make it as accessible as possible, so the game is fully playable using the keyboard. Something I'd like to add in the future is the functionality to make if fully playable using a screen reader and voice commands. I then spent a big amount of time styling it, which was also extremely rewarding, when it all came together in the end.",
+            "bullet-points": [
+                "Game logic for moving the pieces and determining when a win has occured using Javascript with jQuery.",
+                "Intuitive UX with CSS animations",
+                "Strong focus on accessibility"
+            ],
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/connect_four.mp4"
+        },
+        {
+            "title": "Metric Converter",
+            "description": "Tool to convert units like km, miles, liter, cups, ˚C, ˚F, € and $, vanilla Javascript.",
+            "text": "This was my first ever project that I did on my own, not following an online tutorial etc. and marked the beginning of what would become my passion for coding.",
+            "bullet-points": [
+                "Javascript DOM manipulation to display the results",
+                "The conversion rate for the currencies come from a currency API"
+            ],
+            "url": "https://www.github.com/david-aurel/converter",
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/converter.mp4"
+        },
+        {
+            "title": "Petition",
+            "description": "A page for signing a petition, all done with Node.js, Express and Handlebars.",
+            "text": "Hire me! Haha 😅 This project marked the time where I was introduced to a little more complex data flow and the dynamics of working with node extensively. I loved it. It was absolutely great and I had a blast. It's live on hire-me-petition.herokuapp.com, so feel free to check it out and help me find a job!",
+            "multiple-bullets": true,
+            "bullet-points": [
+                [
+                    "Node Express and SQL database backend",
+                    "Authentication with Node, Bcrypt and Cookie-Session, where the cookies are protected from malicious tampering with using a csurf package",
+                    "Edit profile functionality",
+                    "Signature, using a HTML Canvas Element and Javascript",
+                    "See other signers name, age, city, message etc.",
+                    "Delete your signature functionality"
+                ],
+                ["Styled using Bootstrap 4"]
+            ],
+            "url": "https://www.github.com/david-aurel/petition",
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/petition.mp4"
+        },
+        {
+            "title": "Image Board",
+            "description": "A single page application image board with comment functionality, built in Vue.js.",
+            "text": "This project came to life when I realized the world was in need of more blurry and shaky z-roll images. There are no users, just one big image board where everybody can upload. Everybody has the permission to delete any picture, that guarantees there are no bad pictures on the site. The comment section underneath a picture is where the real action is at, just like on reddit or youtube. My plans for the future are to come up with a better branding and to deploy this.",
+            "bullet-points": [
+                "A Node Express and SQL database backend",
+                "New images get handled using Multer, then uploaded to AWS S3, a reference gets stored in the database",
+                "The image board displayes the 20 most recent pictures, upon scrolling down more images are being loaded and displayed",
+                "Navigation is provided with hash routing",
+                "Useres can write comments on individal images",
+                "Users can delete images"
+            ],
+            "url": "https://www.github.com/david-aurel/image_board",
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/image_board.mp4"
+        },
+        {
+            "title": "Quiz",
+            "description": "A digitalized experience of Max Frisch's Book \"Fragebogen\" from 1988, a succession of philosophical questions.",
+            "text": "This was a response to when I was reading the book, but didn't want to have to carry around a pencil and paper at all times to answer the questions. In transforming it into a web site, users can not only answer the questions a lot more efficiently, but could potentially create a completely different set of answers in periods of time and go back, seeing how they answered it for example a year ago versus now.",
+            "bullet-points": [
+                "A Node Express backend",
+                "Utilizing Node's core \"fs\"-module, user information gets stored in server side JSON files",
+                "Users can browse different chapters",
+                "Strictly translating the cover, text and overall layout of the original book with CSS"
+            ],
+            "url": "https://www.github.com/david-aurel/fragebogen",
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/fragebogen.mp4"
+        },
+        {
+            "title": "Incremental Search",
+            "description": "Show list of countries that match the user's input, done in vanilla Javascript.",
+            "text": "This project helped me a lot to become more familiar with DOM Manipulations and at the time I thought it was just the coolest thing ever.",
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/incremental_search.mp4"
+        },
+        {
+            "title": "Live Ticker",
+            "description": "A ticker, showing links crawling across the screen",
+            "text": "This project taught me a lot about the frustration that can come up during programming. Let's just leave it at that 😉",
+            "bullet-points": [
+                "A list of links is being moved across the screen with vanilla Javascript code, so that it loops",
+                "Refactored the code to accept an argument for the direction of the movement",
+                "Refactored the code using jQuery",
+                "Replaced the list of links with results from the Twitter API",
+                "Implemented the functionality to get results from multiple twitter accounts, rather than just one",
+                "Refactored the code to obtain the results from different sources simultaniously"
+            ],
+            "url": "https://www.github.com/david-aurel/peppermint_code",
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/ticker.mp4"
+        }
+    ],
+    "contact-card": [
+        {
+            "url": "https://www.linkedin.com/in/daviddurlan/",
+            "imgUrl": "icons/linkedin.svg",
+            "value": "David Durlan"
+        },
+        {
+            "url": "https://github.com/david-aurel",
+            "imgUrl": "icons/github.svg",
+            "value": "david-aurel"
+        }
+    ],
+    "about-me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu tristique leo, nec placerat lectus. Morbi in congue urna. Mauris in justo vel massa tempus interdum ac at nulla. Fusce lacinia accumsan sapien in facilisis. Nam pretium, elit non commodo varius, nisl libero tempor justo, et consequat metus justo eget dui. Integer sed ex porta, pretium libero et, cursus lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ante mauris, varius nec dapibus sit amet, pretium sed orci. Fusce sit amet auctor turpis. Integer eu ultricies magna. Pellentesque pellentesque accumsan velit, at varius mi bibendum quis. Aenean consequat ligula leo, quis interdum dui interdum sit amet. Aenean porta mauris eu ipsum accumsan placerat id sed elit."
+}
