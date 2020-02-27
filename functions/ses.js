@@ -1,19 +1,18 @@
 const aws = require('aws-sdk');
+const functions = require('firebase-functions');
 
-let secrets;
-if (process.env.NODE_ENV == 'production') {
-    secrets = process.env; // in prod the secrets are environment variables
-} else {
-    secrets = require('../secrets'); // in dev they are in secrets.json which is listed in .gitignore
-}
+const config = functions.config();
+const secrets = config.secrets;
+console.log(('secrets', secrets));
 
 const ses = new aws.SES({
-    accessKeyId: secrets.AWS_KEY,
-    secretAccessKey: secrets.AWS_SECRET,
+    accessKeyId: secrets.key,
+    secretAccessKey: secrets.pass,
     region: 'us-east-1'
 });
 
 exports.sendEmail = function(recipient, message, subject) {
+    console.log('email sent!', recipient, message, subject);
     return ses
         .sendEmail({
             Source: 'David Durlan <david.aurel001@gmail.com>',

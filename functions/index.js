@@ -1,4 +1,5 @@
 const functions = require('firebase-functions');
+
 const express = require('express');
 const engine = require('consolidate');
 
@@ -20,6 +21,8 @@ app.get('/animation', (req, res) => {
 });
 
 app.post('/contact-me', (req, res) => {
+    console.log('contact me route was hit!');
+
     try {
         const recipient = 'david.aurel001@gmail.com';
         const message = `${req.body.name} (${req.body.email}) says: "${req.body.message}"`;
