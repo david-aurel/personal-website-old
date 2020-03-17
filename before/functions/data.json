@@ -3,13 +3,13 @@
         {
             "title": "Social Network",
             "description": "A single page application for users to interact with other users, built in React.",
-            "text": "This was the first time I was using React and I loved it! It was a real melon twister to wrap my head around, especially later on when I started using Redux and Socket.io, but it was so much fun and I'm very happy with how it turned out. When it came to design, I styled it mobile first from scratch, drawing my own icons and everything. May or may not look familiar, but sometimes the smartest thing you can do is a master copy.",
+            "text": "This was the first time using React and I loved it! It was a challenge to wrap my head around, especially later on when I started using Redux and Sockets, but it was so much fun and I'm very happy with how it turned out. When it came to design, I styled it from scratch and mobile first. May or may not look familiar, but sometimes the smartest thing you can do is a master copy, right?",
             "multiple-bullets": true,
             "bullet-points": [
                 [
                     "Node.js with Express and a SQL database backend",
                     "Storing user information in SQL, uploading profile pictures to AWS S3",
-                    "Authentication with Node, Bcrypt and Cookie-Session, where the cookies are protected from malicious tampering with using a csurf package",
+                    "Authentication with Node, Bcrypt and Cookie-Session, where the cookies are protected by using a csurf package",
                     "Reset password functionality: A key with an expiration date gets stored in a Redis Database and gets send out via AWS SES. If the entered key checks out, the user can change the password.",
                     "Edit profile functionality",
                     "Find other users functionality",
@@ -29,11 +29,12 @@
         {
             "title": "Connect Four",
             "description": "Classic two player connect four game, built in Javascript with jQuery.",
-            "text": "This was my favorite project to make, ever! It was one of those weekends where I was so immersed I almost forgot to eat. There were a lot of challenging parts to this one, for example, figuring out when somebody's won diagonally! I wanted to make it as accessible as possible, so the game is fully playable using the keyboard. Something I'd like to add in the future is the functionality to make if fully playable using a screen reader and voice commands. I then spent a big amount of time styling it, which was also extremely rewarding, when it all came together in the end.",
+            "text": "This was one of my favorite projects! There were a lot of challenging parts to this one, for example, figuring out when somebody's won diagonally. I wanted to make it as accessible as possible, so the game is fully playable using the keyboard. If I had more time, I would like to add functionality to make if fully playable using a screen reader and voice commands. Styling it was extremely rewarding, when it all came together in the end..",
             "bullet-points": [
                 "Game logic for moving the pieces and determining when a win has occured using Javascript with jQuery.",
                 "Intuitive UX with CSS animations",
-                "Strong focus on accessibility"
+                "Strong focus on accessibility",
+                "Dark Mode"
             ],
             "url": "https://www.github.com/david-aurel/peppermint_code",
             "imgUrl": "https://daviddurlan.s3.amazonaws.com/connect_four.mp4"
@@ -41,7 +42,7 @@
         {
             "title": "Metric Converter",
             "description": "Tool to convert units like km, miles, liter, cups, ˚C, ˚F, € and $, vanilla Javascript.",
-            "text": "This was my first ever project that I did on my own, not following an online tutorial etc. and marked the beginning of what would become my passion for coding.",
+            "text": "My first ever project I did without following any instructions or tutorials. This is a sentimental one...",
             "bullet-points": [
                 "Javascript DOM manipulation to display the results",
                 "The conversion rate for the currencies come from a currency API"
@@ -52,7 +53,7 @@
         {
             "title": "Petition",
             "description": "A page for signing a petition, all done with Node.js, Express and Handlebars.",
-            "text": "Hire me! Haha 😅 This project marked the time where I was introduced to a little more complex data flow and the dynamics of working with node extensively. I loved it. It was absolutely great and I had a blast. It's live on hire-me-petition.herokuapp.com, so feel free to check it out and help me find a job!",
+            "text": "Hire me! This project marked the time where I was introduced to a little more complex data flow and the dynamics of working with #node and #sql extensively. I had a blast. It's live on hire-me-petition.herokuapp.com, feel free to check it out!",
             "multiple-bullets": true,
             "bullet-points": [
                 [
@@ -71,7 +72,7 @@
         {
             "title": "Image Board",
             "description": "A single page application image board with comment functionality, built in Vue.js.",
-            "text": "This project came to life when I realized the world was in need of more blurry and shaky z-roll images. There are no users, just one big image board where everybody can upload. Everybody has the permission to delete any picture, that guarantees there are no bad pictures on the site. The comment section underneath a picture is where the real action is at, just like on reddit or youtube. My plans for the future are to come up with a better branding and to deploy this.",
+            "text": "First time working with Vue. This project came to life when I realized the world was in need of more blurry and shaky b-roll images. Everybody has the permission to upload or delete any picture, that guarantees there are no bad pictures on the site. The comment section underneath a picture is where the real action is at, just like on reddit or youtube. My plans for the future are to come up with a better branding and to deploy this.",
             "bullet-points": [
                 "A Node Express and SQL database backend",
                 "New images get handled using Multer, then uploaded to AWS S3, a reference gets stored in the database",
@@ -86,7 +87,7 @@
         {
             "title": "Quiz",
             "description": "A digitalized experience of Max Frisch's Book \"Fragebogen\" from 1988, a succession of philosophical questions.",
-            "text": "This was a response to when I was reading the book, but didn't want to have to carry around a pencil and paper at all times to answer the questions. In transforming it into a web site, users can not only answer the questions a lot more efficiently, but could potentially create a completely different set of answers in periods of time and go back, seeing how they answered it for example a year ago versus now.",
+            "text": "This was a response to when I was reading the book, but didn't want to have to carry around a pencil and paper at all times to answer the questions. In transforming it into a web site, users can not only answer the questions a lot more efficiently, but could potentially create a completely different set of answers in different periods of time and go back, seeing how they answered it for example a year ago versus now.",
             "bullet-points": [
                 "A Node Express backend",
                 "Utilizing Node's core \"fs\"-module, user information gets stored in server side JSON files",
@@ -95,6 +96,18 @@
             ],
             "url": "https://www.github.com/david-aurel/fragebogen",
             "imgUrl": "https://daviddurlan.s3.amazonaws.com/fragebogen.mp4"
+        },
+        {
+            "title": "Rejection Leaderboard",
+            "description": "A place to celebrate the hustle that is finding a job as a junior and provide motivation to keep going.",
+            "text": "A fun little project to see who has the most unanswered applications and job offer rejections. This helps to show that everybody gets rejections and your value as a person is not defined by the success in your career. Lets celebrate the person with the most rejections and encourage them to keep going!",
+            "bullet-points": [
+                "A very simple Node Express Backend using Airtable as a database",
+                "Frontend built in React",
+                "Deployment to firebase, setting up the server and airtable as a cloud function"
+            ],
+            "url": "https://github.com/david-aurel/rejection_counter",
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/rejection_leaderboard.mp4"
         },
         {
             "title": "Incremental Search",

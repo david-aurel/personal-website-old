@@ -3,7 +3,6 @@ const functions = require('firebase-functions');
 
 const config = functions.config();
 const secrets = config.secrets;
-console.log(('secrets', secrets));
 
 const ses = new aws.SES({
     accessKeyId: secrets.key,

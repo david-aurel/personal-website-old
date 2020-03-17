@@ -142,6 +142,10 @@ main {
 main p {
     line-height: 1.7rem;
 }
+/* about me */
+.about-me {
+    overflow: scroll;
+}
 
 /* portfolio */
 .portfolio {
