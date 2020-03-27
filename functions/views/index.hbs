@@ -61,47 +61,18 @@
             <div class="navLinks">
                 <div class="slider"></div>
                 <div class="navLink" data-pos="0%">
-                    About me
+                    Portfolio
                 </div>
                 <div class="space"></div>
-                <div class="navLink" data-pos="30%">Contact</div>
+                <div class="navLink" data-pos="30%">About me</div>
                 <div class="space"></div>
-                <div class="navLink" data-pos="60%">Portfolio</div>
+                <div class="navLink" data-pos="60%">Contact</div>
             </div>
         </nav>
     </header>
     <main>
         <div id="contentContainer">
             <div id="contentWrapper">
-                <div class="about-me page">
-                    <p>{{data/about-me}}</p>
-                </div>
-                <div class="contact page">
-                    <div class="contact-card">
-                        <ul>
-                            {{#data/contact-card}}
-                            <li>
-                                <a href={{url}} target="_blank">
-                                    <img src={{imgUrl}} alt="">
-                                    <p>{{value}}</p>
-                                </a>
-                            </li>
-                            {{/data/contact-card}}
-                        </ul>
-                    </div>
-                    <div class="contact-form">
-                        <h4>...Or write me here!</h4>
-                        <form action="/contact-me" method="POST">
-                            <div class="form-sender">
-                                <input type="text" name="name" id="name" placeholder="name" required />
-                                <input type="email" name="email" id="email" placeholder="email" required />
-                            </div>
-                            <input type="text" name="subject" id="subject" placeholder="subject" />
-                            <textarea name="message" name="message" id="message" placeholder="message"></textarea>
-                            <button>submit</button>
-                        </form>
-                    </div>
-                </div>
                 <div class="portfolio page">
                     <img src="icons/back.svg" name="back" alt="" class="icon" />
                     <div class="portfolio-element-wrapper">
@@ -137,6 +108,36 @@
                     </div>
                     <img src="icons/forward.svg" name="forward" alt="" class="icon" />
                 </div>
+                <div class="about-me page">
+                    <p>{{data/about-me}}</p>
+                </div>
+                <div class="contact page">
+                    <div class="contact-card">
+                        <ul>
+                            {{#data/contact-card}}
+                            <li>
+                                <a href={{url}} target="_blank">
+                                    <img src={{imgUrl}} alt="">
+                                    <p>{{value}}</p>
+                                </a>
+                            </li>
+                            {{/data/contact-card}}
+                        </ul>
+                    </div>
+                    <div class="contact-form">
+                        <h4>...Or write me here!</h4>
+                        <form action="/contact-me" method="POST">
+                            <div class="form-sender">
+                                <input type="text" name="name" id="name" placeholder="name" required />
+                                <input type="email" name="email" id="email" placeholder="email" required />
+                            </div>
+                            <input type="text" name="subject" id="subject" placeholder="subject" />
+                            <textarea name="message" name="message" id="message" placeholder="message"></textarea>
+                            <button>submit</button>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>
