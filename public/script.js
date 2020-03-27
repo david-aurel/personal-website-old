@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 contentPos = '0%';
                 break;
             case navElems[1]:
-                sliderPos = '39%';
+                sliderPos = '33%';
                 contentPos = '-33.34%';
                 break;
             case navElems[2]:
-                sliderPos = '76%';
+                sliderPos = '66%';
                 contentPos = '-66.67%';
                 break;
         }
