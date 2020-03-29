@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import './App.css';
@@ -7,17 +8,13 @@ import About from './components/about';
 import Portfolio from './components/portfolio';
 import Contact from './components/contact';
 import Blog from './components/blog';
-import { useEffect } from 'react';
 
 function App() {
-    useEffect(() => {
-        const script = document.createElement('script');
-
-        script.src = 'slider';
-        script.async = true;
-
-        document.body.appendChild(script);
-    });
+    const [sliderState, setSliderState] = useState('slider-blog');
+    const handleClick = target => {
+        setSliderState(`slider-${target}`);
+        console.log('boom');
+    };
     return (
         <>
             <Header />
@@ -25,17 +22,49 @@ function App() {
                 <div className='App'>
                     <nav>
                         <div className='navLinks'>
+                            <div className={`slider ${sliderState}`}></div>
                             <p className='navLink'>
-                                <Link to='/blog'>Blog</Link>
+                                <Link
+                                    to='/blog'
+                                    onClick={() => {
+                                        setSliderState('slider-blog');
+                                    }}
+                                >
+                                    Blog
+                                </Link>
                             </p>
+                            <div className='space'></div>
                             <p className='navLink'>
-                                <Link to='/portfolio'>Portfolio</Link>
+                                <Link
+                                    to='/portfolio'
+                                    onClick={() => {
+                                        setSliderState('slider-portfolio');
+                                    }}
+                                >
+                                    Portfolio
+                                </Link>
                             </p>
+                            <div className='space'></div>
                             <p className='navLink'>
-                                <Link to='/about'>About me</Link>
+                                <Link
+                                    to='/about'
+                                    onClick={() => {
+                                        setSliderState('slider-about');
+                                    }}
+                                >
+                                    About me
+                                </Link>
                             </p>
+                            <div className='space'></div>
                             <p className='navLink'>
-                                <Link to='/contact'>Contact</Link>
+                                <Link
+                                    to='/contact'
+                                    onClick={() => {
+                                        setSliderState('slider-contact');
+                                    }}
+                                >
+                                    Contact
+                                </Link>
                             </p>
                         </div>
                     </nav>

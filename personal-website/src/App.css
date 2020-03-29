@@ -90,6 +90,7 @@ nav {
     font-size: 5vw;
     position: relative;
     overflow: hidden;
+    padding-bottom: 5px;
 }
 .navLink a {
     text-decoration: none;
@@ -100,9 +101,24 @@ nav {
     position: absolute;
     bottom: 0;
     height: 2px;
-    width: 33%;
     background: var(--yellow);
-    margin-left: 0;
+}
+
+.slider-blog {
+    margin: 0;
+    width: 12%;
+}
+.slider-portfolio {
+    margin-left: 19%;
+    width: 22%;
+}
+.slider-about {
+    margin-left: 48%;
+    width: 25%;
+}
+.slider-contact {
+    margin-left: 80%;
+    width: 20%;
 }
 
 .space {
