@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
-const About = () => {
+const About = ({ data }) => {
     return (
-        <div className='page'>
+        <div className='page about-me'>
             <p>ABOUT</p>
+            {data.split('\n').map(line => (
+                <p>{line}</p>
+            ))}
         </div>
     );
 };

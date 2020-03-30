@@ -30,6 +30,24 @@ body {
     flex-direction: column;
 }
 
+#root {
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.main {
+    position: relative;
+    height: 100%;
+    overflow: scroll;
+}
+
 ul {
     padding-inline-start: 20px;
 }
@@ -43,9 +61,10 @@ video {
 
 .page {
     position: absolute;
-    top: 30px;
+    top: 0;
     left: 0;
     right: 0;
+    overflow: scroll;
 }
 /* cursor */
 
@@ -79,7 +98,7 @@ video {
 
 /* navbar */
 nav {
-    margin-top: 10px;
+    margin: 10px 0 15px 0;
 }
 
 .navLinks {
@@ -128,13 +147,10 @@ nav {
 }
 
 /* main */
-main {
+/* main {
     overflow: hidden;
     display: flex;
     flex-grow: 1;
-}
-.main {
-    position: relative;
 }
 #contentContainer {
     width: 100%;
@@ -150,23 +166,20 @@ main {
     height: 100%;
 }
 
-.about-me,
-.contact,
-.portfolio {
-    display: inline-block;
-    width: 33.3%;
-}
-
 .show {
     display: inline-block;
 }
 
 main p {
     line-height: 1.7rem;
-}
+} */
 /* about me */
 .about-me {
     overflow: scroll;
+}
+
+.about-me p {
+    margin-bottom: 10px;
 }
 
 /* portfolio */

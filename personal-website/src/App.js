@@ -8,6 +8,7 @@ import About from './components/about';
 import Portfolio from './components/portfolio';
 import Contact from './components/contact';
 import Blog from './components/blog';
+import data from './data';
 
 function App() {
     const [sliderState, setSliderState] = useState('slider-blog');
@@ -85,7 +86,7 @@ function App() {
                                             <Portfolio />
                                         </Route>
                                         <Route path='/about'>
-                                            <About />
+                                            <About data={data['about-me']} />
                                         </Route>
                                         <Route path='/contact'>
                                             <Contact />
