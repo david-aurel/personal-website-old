@@ -1,18 +1,19 @@
 const aws = require('aws-sdk');
 const functions = require('firebase-functions');
-const secrets = require('./.runtimeconfig.json');
+const { secrets } = require('./.runtimeconfig.json');
 
 // for production
 // const secrets = functions.config().secrets;
 
 const ses = new aws.SES({
     accessKeyId: secrets.key,
-    secretAccessKey: secrets.pass,
+    secretAccessKey: secrets.secret,
     region: 'us-east-1'
 });
 
 exports.sendEmail = function(recipient, message, subject) {
     console.log('email sent!', recipient, message, subject);
+
     return ses
         .sendEmail({
             Source: 'David Durlan <david.aurel001@gmail.com>',
@@ -30,5 +31,6 @@ exports.sendEmail = function(recipient, message, subject) {
                 }
             }
         })
-        .promise();
+        .promise()
+        .catch(err => err);
 };

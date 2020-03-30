@@ -89,7 +89,9 @@ function App() {
                                             <About data={data['about-me']} />
                                         </Route>
                                         <Route path='/contact'>
-                                            <Contact />
+                                            <Contact
+                                                data={data['contact-card']}
+                                            />
                                         </Route>
                                     </Switch>
                                 </CSSTransition>
