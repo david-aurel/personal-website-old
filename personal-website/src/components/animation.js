@@ -4,49 +4,66 @@ import './animation.css';
 
 const Animation = () => {
     return (
-        <div class='animation-wrapper'>
-            <div class='animation'>
-                <div class='man'>
-                    <div class='upper-body'>
-                        <img class='r-arm' src='animation/r-arm.svg' />
-                        <img class='torso' src='animation/torso.svg' />
-                        <div class='l-arm'>
+        <div className='animation-wrapper'>
+            <div className='animation'>
+                <div className='man'>
+                    <div className='upper-body'>
+                        <img
+                            className='r-arm'
+                            src='animation/r-arm.svg'
+                            alt=''
+                        />
+                        <img
+                            className='torso'
+                            src='animation/torso.svg'
+                            alt=''
+                        />
+                        <div className='l-arm'>
                             <img
-                                class='l-up-arm'
+                                className='l-up-arm'
                                 src='animation/l-up-arm.svg'
+                                alt=''
                             />
                             <img
-                                class='l-low-arm'
+                                className='l-low-arm'
                                 src='animation/l-low-arm.svg'
+                                alt=''
                             />
                         </div>
                     </div>
-                    <div class='boat-legs-laptop-motor'>
-                        <div class='motor'>
-                            <div class='propeller'>
-                                <img src='animation/propeller.svg' />
-                                <img src='animation/propeller.svg' />
+                    <div className='boat-legs-laptop-motor'>
+                        <div className='motor'>
+                            <div className='propeller'>
+                                <img src='animation/propeller.svg' alt='' />
+                                <img src='animation/propeller.svg' alt='' />
                             </div>
-                            <img class='engine' src='animation/engine.svg' />
+                            <img
+                                className='engine'
+                                src='animation/engine.svg'
+                                alt=''
+                            />
                         </div>
                         <img
-                            class='legs-and-boat'
+                            className='legs-and-boat'
                             src='animation/legs-and-boat.svg'
+                            alt=''
                         />
-                        <div class='laptop'>
+                        <div className='laptop'>
                             <img
-                                class='laptop-bottom'
+                                className='laptop-bottom'
                                 src='animation/laptop-bottom.svg'
+                                alt=''
                             />
                             <img
-                                class='laptop-top'
+                                className='laptop-top'
                                 src='animation/laptop-top.svg'
+                                alt=''
                             />
                         </div>
                     </div>
                 </div>
-                <div class='water'>
-                    <div class='wave'></div>
+                <div className='water'>
+                    <div className='wave'></div>
                 </div>
             </div>
         </div>

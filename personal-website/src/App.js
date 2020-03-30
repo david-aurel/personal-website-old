@@ -1,21 +1,17 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import './App.css';
 import Header from './components/header.js';
 import About from './components/about';
 import Portfolio from './components/portfolio';
+import PortfolioCard from './components/portfolioCard';
 import Contact from './components/contact';
 import Blog from './components/blog';
 import data from './data';
 
 function App() {
     const [sliderState, setSliderState] = useState('slider-blog');
-    const handleClick = target => {
-        setSliderState(`slider-${target}`);
-        console.log('boom');
-    };
     return (
         <>
             <Header />
@@ -26,7 +22,7 @@ function App() {
                             <div className={`slider ${sliderState}`}></div>
                             <p className='navLink'>
                                 <Link
-                                    to='/blog'
+                                    to='/'
                                     onClick={() => {
                                         setSliderState('slider-blog');
                                     }}
@@ -79,11 +75,12 @@ function App() {
                                     classNames='fade'
                                 >
                                     <Switch location={location}>
-                                        <Route path='/blog'>
-                                            <Blog />
+                                        <Route exact path='/'>
+                                            <Blog data={data.blog} />
                                         </Route>
+
                                         <Route path='/portfolio'>
-                                            <Portfolio />
+                                            <Portfolio data={data.portfolio} />
                                         </Route>
                                         <Route path='/about'>
                                             <About data={data['about-me']} />
@@ -92,6 +89,9 @@ function App() {
                                             <Contact
                                                 data={data['contact-card']}
                                             />
+                                        </Route>
+                                        <Route path='/portfolio/:project'>
+                                            <PortfolioCard />
                                         </Route>
                                     </Switch>
                                 </CSSTransition>

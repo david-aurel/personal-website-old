@@ -192,6 +192,19 @@ main p {
     grid-column-gap: 20px;
 }
 
+.portfolio-card-wrapper {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+a.portfolio-card {
+    background: lightgray;
+    margin: 10px;
+    min-width: 220px;
+    height: 200px;
+}
+
 .portfolio-element-wrapper {
     height: 100%;
     overflow: scroll;
