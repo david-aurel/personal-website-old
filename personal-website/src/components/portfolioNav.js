@@ -1,12 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-const PortfolioNav = ({ data }) => {
+const PortfolioNav = ({ data, changeAnimation }) => {
     return (
         <div className='page portfolioNav'>
             {data.map((el, id) => {
                 return (
-                    <Link to={`/portfolio/${id}`} key={id}>
+                    <Link
+                        to={`/portfolio/${id}`}
+                        key={id}
+                        onClick={() => changeAnimation('slide')}
+                    >
                         link to {el.title} card
                     </Link>
                 );

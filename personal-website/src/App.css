@@ -469,3 +469,23 @@ textarea::placeholder {
     transform: translateX(-100%);
     transition: 300ms linear;
 }
+
+.slide-back-appear,
+.slide-back-enter {
+    transform: translateX(-100%);
+}
+
+.slide-back-appear-active,
+.slide-back-enter.slide-back-enter-active {
+    transform: translateX(0);
+    transition: 300ms linear;
+}
+
+.slide-back-exit {
+    transform: translateX(0);
+}
+
+.slide-back-exit.slide-back-exit-active {
+    transform: translateX(100%);
+    transition: 300ms linear;
+}
