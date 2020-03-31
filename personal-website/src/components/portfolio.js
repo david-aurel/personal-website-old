@@ -7,8 +7,6 @@ import PortfolioNav from './portfolioNav';
 const Portfolio = ({ data, location }) => {
     const [animationClassName, setAnimationClassName] = useState('slide');
     const changeAnimation = direction => {
-        console.log('animation changed to', direction);
-
         setAnimationClassName(direction);
     };
     return (

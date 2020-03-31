@@ -10750,3 +10750,156 @@
 [info] i  functions: Finished "app" in ~1s
 [debug] [2020-03-31T08:23:05.299Z] [worker-app-f53a0575-aaa7-45e9-b000-f0bd2ccef45f]: IDLE
 [debug] [2020-03-31T08:23:05.299Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-31T08:24:00.219Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-31T08:24:00.219Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-31T08:24:00.219Z] Accepted request GET /test-27d0e/us-central1/app/portfolio/animation/r-arm.svg --> app
+[debug] [2020-03-31T08:24:00.219Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-31T08:24:00.219Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68341.sock
+[debug] [2020-03-31T08:24:00.219Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: BUSY
+[debug] [2020-03-31T08:24:00.221Z] [runtime-status] [68341] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-03-31T08:24:00.221Z] [runtime-status] [68341] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-03-31T08:24:00.221Z] [runtime-status] [68341] Running app in mode HTTPS
+[debug] [2020-03-31T08:24:00.221Z] [runtime-status] [68341] Attempting to listen to socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68341.sock
+[debug] [2020-03-31T08:24:00.222Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-31T08:24:00.223Z] [runtime-status] [68341] Ephemeral server handling GET request
+[debug] [2020-03-31T08:24:00.224Z] [runtime-status] [68341] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-03-31T08:24:00.224Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: IDLE
+[debug] [2020-03-31T08:24:00.224Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-31T08:24:00.234Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-31T08:24:00.234Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-31T08:24:00.234Z] Accepted request GET /test-27d0e/us-central1/app/portfolio/animation/torso.svg --> app
+[debug] [2020-03-31T08:24:00.234Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-31T08:24:00.234Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68341.sock
+[debug] [2020-03-31T08:24:00.234Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: BUSY
+[debug] [2020-03-31T08:24:00.234Z] [runtime-status] [68341] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-03-31T08:24:00.235Z] [runtime-status] [68341] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-03-31T08:24:00.235Z] [runtime-status] [68341] Running app in mode HTTPS
+[debug] [2020-03-31T08:24:00.235Z] [runtime-status] [68341] Attempting to listen to socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68341.sock
+[debug] [2020-03-31T08:24:00.236Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-31T08:24:00.238Z] [runtime-status] [68341] Ephemeral server handling GET request
+[debug] [2020-03-31T08:24:00.239Z] [runtime-status] [68341] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-03-31T08:24:00.239Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: IDLE
+[debug] [2020-03-31T08:24:00.239Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-31T08:24:00.248Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-31T08:24:00.248Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-31T08:24:00.248Z] Accepted request GET /test-27d0e/us-central1/app/portfolio/animation/l-up-arm.svg --> app
+[debug] [2020-03-31T08:24:00.248Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-31T08:24:00.248Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68341.sock
+[debug] [2020-03-31T08:24:00.249Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: BUSY
+[debug] [2020-03-31T08:24:00.249Z] [runtime-status] [68341] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-03-31T08:24:00.249Z] [runtime-status] [68341] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-03-31T08:24:00.249Z] [runtime-status] [68341] Running app in mode HTTPS
+[debug] [2020-03-31T08:24:00.249Z] [runtime-status] [68341] Attempting to listen to socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68341.sock
+[debug] [2020-03-31T08:24:00.250Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-31T08:24:00.252Z] [runtime-status] [68341] Ephemeral server handling GET request
+[debug] [2020-03-31T08:24:00.252Z] [runtime-status] [68341] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-03-31T08:24:00.253Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: IDLE
+[debug] [2020-03-31T08:24:00.253Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-31T08:24:00.261Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-31T08:24:00.261Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-31T08:24:00.261Z] Accepted request GET /test-27d0e/us-central1/app/portfolio/animation/l-low-arm.svg --> app
+[debug] [2020-03-31T08:24:00.261Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-31T08:24:00.262Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68341.sock
+[debug] [2020-03-31T08:24:00.262Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: BUSY
+[debug] [2020-03-31T08:24:00.262Z] [runtime-status] [68341] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-03-31T08:24:00.262Z] [runtime-status] [68341] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-03-31T08:24:00.262Z] [runtime-status] [68341] Running app in mode HTTPS
+[debug] [2020-03-31T08:24:00.262Z] [runtime-status] [68341] Attempting to listen to socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68341.sock
+[debug] [2020-03-31T08:24:00.265Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-31T08:24:00.269Z] [runtime-status] [68341] Ephemeral server handling GET request
+[debug] [2020-03-31T08:24:00.269Z] [runtime-status] [68341] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-03-31T08:24:00.270Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: IDLE
+[debug] [2020-03-31T08:24:00.270Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-31T08:24:00.272Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-31T08:24:00.272Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-31T08:24:00.272Z] Accepted request GET /test-27d0e/us-central1/app/portfolio/animation/propeller.svg --> app
+[debug] [2020-03-31T08:24:00.272Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-31T08:24:00.272Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68341.sock
+[debug] [2020-03-31T08:24:00.272Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: BUSY
+[debug] [2020-03-31T08:24:00.281Z] [runtime-status] [68341] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-03-31T08:24:00.281Z] [runtime-status] [68341] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-03-31T08:24:00.281Z] [runtime-status] [68341] Running app in mode HTTPS
+[debug] [2020-03-31T08:24:00.281Z] [runtime-status] [68341] Attempting to listen to socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68341.sock
+[debug] [2020-03-31T08:24:00.282Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-31T08:24:00.286Z] [runtime-status] [68341] Ephemeral server handling GET request
+[debug] [2020-03-31T08:24:00.288Z] [runtime-status] [68341] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-03-31T08:24:00.289Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: IDLE
+[debug] [2020-03-31T08:24:00.289Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-31T08:24:00.295Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-31T08:24:00.295Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-31T08:24:00.295Z] Accepted request GET /test-27d0e/us-central1/app/portfolio/animation/engine.svg --> app
+[debug] [2020-03-31T08:24:00.295Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-31T08:24:00.295Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68341.sock
+[debug] [2020-03-31T08:24:00.295Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: BUSY
+[debug] [2020-03-31T08:24:00.297Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-03-31T08:24:00.297Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-03-31T08:24:00.297Z] Accepted request GET /test-27d0e/us-central1/app/portfolio/animation/legs-and-boat.svg --> app
+[debug] [2020-03-31T08:24:00.297Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-31T08:24:00.297Z] [worker-app-7f9a644b-4670-4f20-a785-f7191b45e6ae]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68725.sock
+[debug] [2020-03-31T08:24:00.297Z] [worker-app-7f9a644b-4670-4f20-a785-f7191b45e6ae]: BUSY
+[debug] [2020-03-31T08:24:00.298Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-03-31T08:24:00.298Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-03-31T08:24:00.298Z] Accepted request GET /test-27d0e/us-central1/app/portfolio/animation/laptop-bottom.svg --> app
+[debug] [2020-03-31T08:24:00.298Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-31T08:24:00.298Z] [worker-app-17801e42-9891-486d-8cef-39754e03d107]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68726.sock
+[debug] [2020-03-31T08:24:00.298Z] [worker-app-17801e42-9891-486d-8cef-39754e03d107]: BUSY
+[debug] [2020-03-31T08:24:00.299Z] [runtime-status] [68725] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-03-31T08:24:00.300Z] [runtime-status] [68725] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-03-31T08:24:00.300Z] [runtime-status] [68725] Running app in mode HTTPS
+[debug] [2020-03-31T08:24:00.300Z] [runtime-status] [68725] Attempting to listen to socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68725.sock
+[debug] [2020-03-31T08:24:00.301Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-31T08:24:00.301Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-03-31T08:24:00.301Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-03-31T08:24:00.301Z] Accepted request GET /test-27d0e/us-central1/app/portfolio/animation/laptop-top.svg --> app
+[debug] [2020-03-31T08:24:00.301Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-31T08:24:00.301Z] [worker-app-0b311ae9-2257-4038-a54c-10dba2740c9d]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68727.sock
+[debug] [2020-03-31T08:24:00.301Z] [worker-app-0b311ae9-2257-4038-a54c-10dba2740c9d]: BUSY
+[debug] [2020-03-31T08:24:00.304Z] [runtime-status] [68726] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-03-31T08:24:00.304Z] [runtime-status] [68726] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-03-31T08:24:00.304Z] [runtime-status] [68726] Running app in mode HTTPS
+[debug] [2020-03-31T08:24:00.304Z] [runtime-status] [68726] Attempting to listen to socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68726.sock
+[debug] [2020-03-31T08:24:00.305Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-31T08:24:00.305Z] [runtime-status] [68341] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-03-31T08:24:00.306Z] [runtime-status] [68341] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-03-31T08:24:00.306Z] [runtime-status] [68341] Running app in mode HTTPS
+[debug] [2020-03-31T08:24:00.306Z] [runtime-status] [68341] Attempting to listen to socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68341.sock
+[debug] [2020-03-31T08:24:00.307Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-31T08:24:00.307Z] [runtime-status] [68727] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-03-31T08:24:00.309Z] [runtime-status] [68727] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-03-31T08:24:00.309Z] [runtime-status] [68727] Running app in mode HTTPS
+[debug] [2020-03-31T08:24:00.309Z] [runtime-status] [68727] Attempting to listen to socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_68727.sock
+[debug] [2020-03-31T08:24:00.311Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-31T08:24:00.314Z] [runtime-status] [68725] Ephemeral server handling GET request
+[debug] [2020-03-31T08:24:00.314Z] [runtime-status] [68725] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-03-31T08:24:00.315Z] [worker-app-7f9a644b-4670-4f20-a785-f7191b45e6ae]: IDLE
+[debug] [2020-03-31T08:24:00.315Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-03-31T08:24:00.319Z] [runtime-status] [68726] Ephemeral server handling GET request
+[debug] [2020-03-31T08:24:00.319Z] [runtime-status] [68726] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-03-31T08:24:00.319Z] [worker-app-17801e42-9891-486d-8cef-39754e03d107]: IDLE
+[debug] [2020-03-31T08:24:00.319Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-03-31T08:24:00.320Z] [runtime-status] [68727] Ephemeral server handling GET request
+[debug] [2020-03-31T08:24:00.320Z] [runtime-status] [68727] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-03-31T08:24:00.320Z] [worker-app-0b311ae9-2257-4038-a54c-10dba2740c9d]: IDLE
+[debug] [2020-03-31T08:24:00.320Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-31T08:24:00.320Z] [runtime-status] [68341] Ephemeral server handling GET request
+[debug] [2020-03-31T08:24:00.320Z] [runtime-status] [68341] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-03-31T08:24:00.320Z] [worker-app-6a1d3f59-6f21-4edc-8753-ef456944c7e1]: IDLE
+[debug] [2020-03-31T08:24:00.320Z] [work-queue] {"queueLength":0,"workRunningCount":0}
