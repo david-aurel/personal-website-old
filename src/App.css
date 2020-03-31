@@ -1,0 +1,512 @@
+/* general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
+    color: var(--blue);
+}
+:root {
+    --blue: #00b;
+    --red: #ed2a2f;
+    --yellow: #ffcd00;
+    --green: #00b67f;
+}
+
+.red {
+    color: var(--red);
+}
+
+.yellow {
+    color: #ffcd00;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.main {
+    position: relative;
+    height: 100%;
+    overflow: scroll;
+}
+
+ul {
+    padding-inline-start: 20px;
+}
+li {
+    margin: 20px 0px;
+}
+video {
+    width: 100%;
+}
+
+.page {
+    position: absolute;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: scroll;
+}
+/* cursor */
+
+.navLink,
+.icon {
+    cursor: pointer;
+}
+
+/* header */
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.animation-wrapper {
+    position: relative;
+    min-height: 100px;
+    min-width: 140px;
+    margin: 0 auto;
+}
+
+.title h1 {
+    font-size: min(6.9vw, 36px);
+}
+
+.title h3 {
+    font-size: min(4.1vw, 22px);
+    margin: 4px 4px 0 0;
+}
+
+/* navbar */
+nav {
+    margin: 10px 0 15px 0;
+}
+
+.navLinks {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-weight: 350;
+    font-size: 5vw;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+.navLink a {
+    text-decoration: none;
+}
+
+.slider {
+    transition: 0.5s;
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background: var(--yellow);
+}
+
+.slider-blog {
+    margin: 0;
+    width: 12%;
+}
+.slider-portfolio {
+    margin-left: 19%;
+    width: 22%;
+}
+.slider-about {
+    margin-left: 48%;
+    width: 25%;
+}
+.slider-contact {
+    margin-left: 80%;
+    width: 20%;
+}
+
+.space {
+    flex-grow: 1;
+    background: white;
+    z-index: 1;
+}
+
+/* main */
+/* main {
+    overflow: hidden;
+    display: flex;
+    flex-grow: 1;
+}
+#contentContainer {
+    width: 100%;
+    overflow: hidden;
+}
+
+#contentWrapper {
+    width: 300%;
+    display: flex;
+    justify-content: space-between;
+    transition: 500ms;
+    overflow: hidden;
+    height: 100%;
+}
+
+.show {
+    display: inline-block;
+}
+
+main p {
+    line-height: 1.7rem;
+} */
+/* about me */
+.about-me {
+    overflow: scroll;
+}
+
+.about-me p {
+    margin-bottom: 10px;
+}
+
+/* portfolio */
+.portfolio {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 25px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.portfolio-card {
+    overflow: scroll;
+}
+.portfolioNav {
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.portfolioNav a {
+    height: 200px;
+    min-width: 100%;
+    max-width: 230px;
+    background: lightgrey;
+    margin: 10px;
+}
+
+.portfolio-card-wrapper {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+a.portfolio-card {
+    background: lightgray;
+    margin: 10px;
+    min-width: 220px;
+    height: 200px;
+}
+
+.portfolio-element-wrapper {
+    height: 100%;
+    overflow: scroll;
+    position: relative;
+}
+
+.icon {
+    background: white;
+    width: 15px;
+    padding-top: 4px;
+    position: absolute;
+    top: 0;
+}
+
+.portfolio-card h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.portfolio-card video {
+    margin-bottom: 25px;
+}
+
+.portfolio-card p {
+    margin-bottom: 20px;
+}
+.portfolio-description {
+    font-weight: bold;
+}
+
+.portfolio-card a {
+    font-weight: bold;
+    border: 2px solid var(--blue);
+    padding: 7px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    word-break: break-all;
+}
+
+.portfolio-card ul {
+    margin-bottom: 50px;
+}
+
+.portfolio-slide-in-right {
+    animation: slide-in-right 1s;
+}
+.portfolio-slide-in-left {
+    animation: slide-in-left 1s;
+}
+.portfolio-slide-out-right {
+    animation: slide-out-right 1s;
+}
+.portfolio-slide-out-left {
+    animation: slide-out-left 1s;
+}
+
+@keyframes slide-in-right {
+    0% {
+        height: auto;
+        transform: translateX(100%);
+    }
+    100% {
+        height: auto;
+        transform: translateX(0);
+    }
+}
+@keyframes slide-in-left {
+    0% {
+        height: auto;
+        transform: translateX(-100%);
+    }
+    100% {
+        height: auto;
+        transform: translateX(0);
+    }
+}
+@keyframes slide-out-right {
+    0% {
+        height: auto;
+        transform: translateX(0);
+    }
+    100% {
+        height: auto;
+        transform: translateX(100%);
+    }
+}
+@keyframes slide-out-left {
+    0% {
+        height: auto;
+        transform: translateX(0);
+    }
+    100% {
+        height: auto;
+        transform: translateX(-100%);
+    }
+}
+
+/* contact */
+.contact {
+    overflow: scroll;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    background: var(--blue);
+    width: 100%;
+    height: 250px;
+    border-radius: 7px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+.contact-card ul {
+    padding: 0;
+}
+.contact-card a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-card img {
+    width: 50px;
+    margin-right: 20px;
+}
+.contact-card p {
+    color: white;
+    font-size: 1.6rem;
+}
+.contact-form {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form h4 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    border: 1px solid var(--blue);
+    border-radius: 7px;
+    padding: 8px;
+    margin: 4px 0;
+}
+.contact-form button {
+    margin-bottom: 0;
+    width: 55px;
+    font-weight: bold;
+    padding: 6px;
+    background: white;
+}
+
+.form-sender {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.form-sender input:first-of-type {
+    width: 40%;
+}
+.form-sender input:last-of-type {
+    width: 58%;
+}
+
+.contact-form textarea {
+    resize: none;
+    flex-grow: 1;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--blue);
+}
+
+.error {
+    color: var(--red);
+}
+
+.success {
+    color: var(--green);
+}
+
+/* media query */
+@media (min-width: 600px) {
+    .navLinks {
+        max-width: 350px;
+        margin: 0;
+    }
+    .contact {
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .contact-card {
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+
+    .portfolioNav a {
+        height: 150px;
+        min-width: 230px;
+    }
+}
+@media (min-width: 350px) {
+    .navLinks {
+        font-size: 1.2rem;
+    }
+}
+
+/* active, show etc */
+.show-portfolio-element {
+    height: auto;
+}
+
+/* animations */
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: 300ms linear;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: 300ms linear;
+}
+
+.slide-appear,
+.slide-enter {
+    transform: translateX(100%);
+}
+
+.slide-appear-active,
+.slide-enter.slide-enter-active {
+    transform: translateX(0);
+    transition: 400ms;
+}
+
+.slide-exit {
+    transform: translateX(0);
+}
+
+.slide-exit.slide-exit-active {
+    transform: translateX(-100%);
+    transition: 400ms;
+}
+
+.slide-back-appear,
+.slide-back-enter {
+    transform: translateX(-100%);
+}
+
+.slide-back-appear-active,
+.slide-back-enter.slide-back-enter-active {
+    transform: translateX(0);
+    transition: 400ms;
+}
+
+.slide-back-exit {
+    transform: translateX(0);
+}
+
+.slide-back-exit.slide-back-exit-active {
+    transform: translateX(100%);
+    transition: 300ms;
+}

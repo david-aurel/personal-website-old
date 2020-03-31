@@ -1,0 +1,87 @@
+[debug] [2020-03-31T16:54:45.191Z] ----------------------------------------------------------------------
+[debug] [2020-03-31T16:54:45.192Z] Command:       /Users/David/.nvm/versions/node/v13.9.0/bin/node /Users/David/.nvm/versions/node/v13.9.0/bin/firebase serve
+[debug] [2020-03-31T16:54:45.192Z] CLI Version:   7.13.1
+[debug] [2020-03-31T16:54:45.192Z] Platform:      darwin
+[debug] [2020-03-31T16:54:45.192Z] Node Version:  v13.9.0
+[debug] [2020-03-31T16:54:45.193Z] Time:          Tue Mar 31 2020 18:54:45 GMT+0200 (Central European Summer Time)
+[debug] [2020-03-31T16:54:45.194Z] ----------------------------------------------------------------------
+[debug] [2020-03-31T16:54:45.194Z] 
+[debug] [2020-03-31T16:54:45.202Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-31T16:54:45.203Z] > authorizing via signed-in user
+[debug] [2020-03-31T16:54:45.203Z] [iam] checking project test-27d0e for permissions ["firebase.projects.get"]
+[debug] [2020-03-31T16:54:45.204Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/test-27d0e:testIamPermissions  
+
+[debug] [2020-03-31T16:54:46.109Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-31T16:54:46.111Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/test-27d0e  
+ 
+[debug] [2020-03-31T16:54:46.431Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/David/Desktop/code/personal_website'...
+[info] 
+[debug] [2020-03-31T16:54:46.434Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/test-27d0e/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "13"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2020-03-31T16:54:47.068Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/David/Desktop/code/personal_website/functions" for Cloud Functions...
+[debug] [2020-03-31T16:54:47.114Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-31T16:54:47.114Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-31T16:54:47.114Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-31T16:54:47.114Z] [worker-~diagnostic~-44325675-549d-40a6-b69a-67cb4e13a51f]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_93244.sock
+[debug] [2020-03-31T16:54:47.115Z] [worker-~diagnostic~-44325675-549d-40a6-b69a-67cb4e13a51f]: BUSY
+[info] i  hosting: Serving hosting files from: build
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2020-03-31T16:54:47.410Z] [runtime-status] [93244] Functions runtime initialized. {"cwd":"/Users/David/Desktop/code/personal_website/functions","node_version":"13.9.0"}
+[debug] [2020-03-31T16:54:47.410Z] [runtime-status] [93244] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-31T16:54:47.413Z] [runtime-status] [93244] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/David/Desktop/code/personal_website/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-31T16:54:47.414Z] [runtime-status] [93244] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-31T16:54:47.415Z] [runtime-status] [93244] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[app]: http function initialized (http://localhost:5001/test-27d0e/us-central1/app).
+[debug] [2020-03-31T16:54:47.745Z] [worker-~diagnostic~-44325675-549d-40a6-b69a-67cb4e13a51f]: IDLE
+[info] [hosting] Rewriting /contact to http://localhost:5001/test-27d0e/us-central1/app for local Function app
+[debug] [2020-03-31T16:54:59.984Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-31T16:54:59.985Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-31T16:54:59.985Z] Accepted request GET /test-27d0e/us-central1/app/contact --> app
+[debug] [2020-03-31T16:54:59.990Z] [worker-pool] addWorker(app)
+[debug] [2020-03-31T16:54:59.990Z] [worker-pool] Adding worker with key app, total=1
+[debug] [2020-03-31T16:54:59.990Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-31T16:54:59.990Z] [worker-app-a3dd6484-ca91-4f38-b3a1-8309a20418a1]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_93246.sock
+[debug] [2020-03-31T16:54:59.990Z] [worker-app-a3dd6484-ca91-4f38-b3a1-8309a20418a1]: BUSY
+[debug] [2020-03-31T16:55:00.411Z] [runtime-status] [93246] Functions runtime initialized. {"cwd":"/Users/David/Desktop/code/personal_website/functions","node_version":"13.9.0"}
+[debug] [2020-03-31T16:55:00.413Z] [runtime-status] [93246] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-31T16:55:00.416Z] [runtime-status] [93246] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/David/Desktop/code/personal_website/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-31T16:55:00.420Z] [runtime-status] [93246] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-31T16:55:00.422Z] [runtime-status] [93246] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-31T16:55:01.062Z] [runtime-status] [93246] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-03-31T16:55:01.063Z] [runtime-status] [93246] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-03-31T16:55:01.063Z] [runtime-status] [93246] Running app in mode HTTPS
+[debug] [2020-03-31T16:55:01.073Z] [runtime-status] [93246] Attempting to listen to socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_93246.sock
+[debug] [2020-03-31T16:55:01.077Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-31T16:55:01.085Z] [runtime-status] [93246] Ephemeral server handling GET request
+[info] >  * hit
+[debug] [2020-03-31T16:55:01.097Z] [runtime-status] [93246] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-03-31T16:55:01.098Z] [worker-app-a3dd6484-ca91-4f38-b3a1-8309a20418a1]: IDLE
+[debug] [2020-03-31T16:55:01.098Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] [hosting] Rewriting /api/contact-me to http://localhost:5001/test-27d0e/us-central1/app for local Function app
+[debug] [2020-03-31T16:55:08.576Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-31T16:55:08.576Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-31T16:55:08.576Z] Accepted request POST /test-27d0e/us-central1/app/api/contact-me --> app
+[debug] [2020-03-31T16:55:08.577Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-31T16:55:08.577Z] [worker-app-a3dd6484-ca91-4f38-b3a1-8309a20418a1]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_93246.sock
+[debug] [2020-03-31T16:55:08.577Z] [worker-app-a3dd6484-ca91-4f38-b3a1-8309a20418a1]: BUSY
+[debug] [2020-03-31T16:55:08.578Z] [runtime-status] [93246] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-03-31T16:55:08.578Z] [runtime-status] [93246] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-03-31T16:55:08.578Z] [runtime-status] [93246] Running app in mode HTTPS
+[debug] [2020-03-31T16:55:08.578Z] [runtime-status] [93246] Attempting to listen to socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_93246.sock
+[debug] [2020-03-31T16:55:08.580Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-31T16:55:08.599Z] [runtime-status] [93246] Ephemeral server handling POST request
+[info] >  contact me route was hit!
+[info] >  email sent! david.aurel001@gmail.com david (david.a.durlan@gmail.com) says: "asdf" afd
+[debug] [2020-03-31T16:55:08.630Z] [runtime-status] [93246] Ephemeral server survived.
+[info] >  sending email worked
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-03-31T16:55:09.601Z] [worker-app-a3dd6484-ca91-4f38-b3a1-8309a20418a1]: IDLE
+[debug] [2020-03-31T16:55:09.601Z] [work-queue] {"queueLength":0,"workRunningCount":0}
