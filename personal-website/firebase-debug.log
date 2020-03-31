@@ -1,122 +1,87 @@
-[debug] [2020-03-31T12:31:49.056Z] ----------------------------------------------------------------------
-[debug] [2020-03-31T12:31:49.058Z] Command:       /Users/David/.nvm/versions/node/v13.9.0/bin/node /Users/David/.nvm/versions/node/v13.9.0/bin/firebase serve --only functions --port=5001
-[debug] [2020-03-31T12:31:49.058Z] CLI Version:   7.13.1
-[debug] [2020-03-31T12:31:49.058Z] Platform:      darwin
-[debug] [2020-03-31T12:31:49.058Z] Node Version:  v13.9.0
-[debug] [2020-03-31T12:31:49.059Z] Time:          Tue Mar 31 2020 14:31:49 GMT+0200 (Central European Summer Time)
-[debug] [2020-03-31T12:31:49.059Z] ----------------------------------------------------------------------
-[debug] [2020-03-31T12:31:49.059Z] 
-[debug] [2020-03-31T12:31:49.069Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-03-31T12:31:49.069Z] > authorizing via signed-in user
-[debug] [2020-03-31T12:31:49.069Z] [iam] checking project test-27d0e for permissions ["firebase.projects.get"]
-[debug] [2020-03-31T12:31:49.071Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/test-27d0e:testIamPermissions  
+[debug] [2020-03-31T16:47:33.790Z] ----------------------------------------------------------------------
+[debug] [2020-03-31T16:47:33.791Z] Command:       /Users/David/.nvm/versions/node/v13.9.0/bin/node /Users/David/.nvm/versions/node/v13.9.0/bin/firebase serve
+[debug] [2020-03-31T16:47:33.792Z] CLI Version:   7.13.1
+[debug] [2020-03-31T16:47:33.792Z] Platform:      darwin
+[debug] [2020-03-31T16:47:33.792Z] Node Version:  v13.9.0
+[debug] [2020-03-31T16:47:33.793Z] Time:          Tue Mar 31 2020 18:47:33 GMT+0200 (Central European Summer Time)
+[debug] [2020-03-31T16:47:33.793Z] ----------------------------------------------------------------------
+[debug] [2020-03-31T16:47:33.793Z] 
+[debug] [2020-03-31T16:47:33.801Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-31T16:47:33.802Z] > authorizing via signed-in user
+[debug] [2020-03-31T16:47:33.802Z] [iam] checking project test-27d0e for permissions ["firebase.projects.get"]
+[debug] [2020-03-31T16:47:33.803Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/test-27d0e:testIamPermissions  
 
-[debug] [2020-03-31T12:31:49.977Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-31T12:31:49.979Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/test-27d0e  
+[debug] [2020-03-31T16:47:34.695Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-31T16:47:34.697Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/test-27d0e  
  
-[debug] [2020-03-31T12:31:50.312Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-31T16:47:34.935Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/David/Desktop/code/personal_website/personal-website'...
+[info] 
+[debug] [2020-03-31T16:47:34.939Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/test-27d0e/webApps/-/config  
+ 
 [warn] ⚠  Your requested "node" version "8" doesn't match your global version "13"
 [info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2020-03-31T16:47:35.684Z] <<< HTTP RESPONSE 200
 [info] i  functions: Watching "/Users/David/Desktop/code/personal_website/personal-website/functions" for Cloud Functions...
-[debug] [2020-03-31T12:31:50.603Z] [worker-pool] addWorker(~diagnostic~)
-[debug] [2020-03-31T12:31:50.603Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
-[debug] [2020-03-31T12:31:50.603Z] [worker-pool] submitWork(triggerId=)
-[debug] [2020-03-31T12:31:50.604Z] [worker-~diagnostic~-73846680-cb2a-4d7b-adaf-c9d6dd4e869a]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_84575.sock
-[debug] [2020-03-31T12:31:50.604Z] [worker-~diagnostic~-73846680-cb2a-4d7b-adaf-c9d6dd4e869a]: BUSY
-[debug] [2020-03-31T12:31:50.893Z] [runtime-status] [84575] Functions runtime initialized. {"cwd":"/Users/David/Desktop/code/personal_website/personal-website/functions","node_version":"13.9.0"}
-[debug] [2020-03-31T12:31:50.895Z] [runtime-status] [84575] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
-[debug] [2020-03-31T12:31:50.899Z] [runtime-status] [84575] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-03-31T12:31:50.900Z] [runtime-status] [84575] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-03-31T12:31:50.902Z] [runtime-status] [84575] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-31T16:47:35.725Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-31T16:47:35.725Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-31T16:47:35.725Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-31T16:47:35.726Z] [worker-~diagnostic~-6a67b70b-dfca-45a0-b933-84ca9c0bf448]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_92645.sock
+[debug] [2020-03-31T16:47:35.726Z] [worker-~diagnostic~-6a67b70b-dfca-45a0-b933-84ca9c0bf448]: BUSY
+[info] i  hosting: Serving hosting files from: build
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2020-03-31T16:47:36.023Z] [runtime-status] [92645] Functions runtime initialized. {"cwd":"/Users/David/Desktop/code/personal_website/personal-website/functions","node_version":"13.9.0"}
+[debug] [2020-03-31T16:47:36.024Z] [runtime-status] [92645] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-31T16:47:36.026Z] [runtime-status] [92645] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-31T16:47:36.027Z] [runtime-status] [92645] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-31T16:47:36.028Z] [runtime-status] [92645] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-functions/lib/index.js"}
 [info] ✔  functions[app]: http function initialized (http://localhost:5001/test-27d0e/us-central1/app).
-[debug] [2020-03-31T12:31:52.152Z] [worker-~diagnostic~-73846680-cb2a-4d7b-adaf-c9d6dd4e869a]: IDLE
-[debug] [2020-03-31T12:31:57.707Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-03-31T12:31:57.707Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-03-31T12:31:57.708Z] Accepted request POST /test-27d0e/us-central1/app/contact-me --> app
-[debug] [2020-03-31T12:31:57.714Z] [worker-pool] addWorker(app)
-[debug] [2020-03-31T12:31:57.714Z] [worker-pool] Adding worker with key app, total=1
-[debug] [2020-03-31T12:31:57.714Z] [worker-pool] submitWork(triggerId=app)
-[debug] [2020-03-31T12:31:57.714Z] [worker-app-35682a22-8bb3-4f41-9a4f-5b26ed8816ec]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_84584.sock
-[debug] [2020-03-31T12:31:57.714Z] [worker-app-35682a22-8bb3-4f41-9a4f-5b26ed8816ec]: BUSY
-[debug] [2020-03-31T12:31:58.031Z] [runtime-status] [84584] Functions runtime initialized. {"cwd":"/Users/David/Desktop/code/personal_website/personal-website/functions","node_version":"13.9.0"}
-[debug] [2020-03-31T12:31:58.032Z] [runtime-status] [84584] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
-[debug] [2020-03-31T12:31:58.034Z] [runtime-status] [84584] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-03-31T12:31:58.035Z] [runtime-status] [84584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-03-31T12:31:58.036Z] [runtime-status] [84584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-03-31T12:31:58.670Z] [runtime-status] [84584] Trigger "app" has been found, beginning invocation!
+[debug] [2020-03-31T16:47:36.367Z] [worker-~diagnostic~-6a67b70b-dfca-45a0-b933-84ca9c0bf448]: IDLE
+[info] [hosting] Rewriting /about to http://localhost:5001/test-27d0e/us-central1/app for local Function app
+[debug] [2020-03-31T16:47:43.735Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-31T16:47:43.735Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-31T16:47:43.735Z] Accepted request GET /test-27d0e/us-central1/app/about --> app
+[debug] [2020-03-31T16:47:43.750Z] [worker-pool] addWorker(app)
+[debug] [2020-03-31T16:47:43.750Z] [worker-pool] Adding worker with key app, total=1
+[debug] [2020-03-31T16:47:43.751Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-31T16:47:43.751Z] [worker-app-3183a63e-2cb5-4cdc-9054-4b411d97bf50]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_92655.sock
+[debug] [2020-03-31T16:47:43.751Z] [worker-app-3183a63e-2cb5-4cdc-9054-4b411d97bf50]: BUSY
+[debug] [2020-03-31T16:47:44.083Z] [runtime-status] [92655] Functions runtime initialized. {"cwd":"/Users/David/Desktop/code/personal_website/personal-website/functions","node_version":"13.9.0"}
+[debug] [2020-03-31T16:47:44.085Z] [runtime-status] [92655] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-31T16:47:44.087Z] [runtime-status] [92655] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-31T16:47:44.088Z] [runtime-status] [92655] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-31T16:47:44.090Z] [runtime-status] [92655] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-31T16:47:44.559Z] [runtime-status] [92655] Trigger "app" has been found, beginning invocation!
 [info] i  functions: Beginning execution of "app"
-[debug] [2020-03-31T12:31:58.671Z] [runtime-status] [84584] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
-[debug] [2020-03-31T12:31:58.671Z] [runtime-status] [84584] Running app in mode HTTPS
-[debug] [2020-03-31T12:31:58.675Z] [runtime-status] [84584] Attempting to listen to socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_84584.sock
-[debug] [2020-03-31T12:31:58.681Z] [functions] Runtime ready! Sending request!
-[debug] [2020-03-31T12:31:58.702Z] [runtime-status] [84584] Ephemeral server handling POST request
+[debug] [2020-03-31T16:47:44.561Z] [runtime-status] [92655] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-03-31T16:47:44.561Z] [runtime-status] [92655] Running app in mode HTTPS
+[debug] [2020-03-31T16:47:44.566Z] [runtime-status] [92655] Attempting to listen to socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_92655.sock
+[debug] [2020-03-31T16:47:44.575Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-31T16:47:44.585Z] [runtime-status] [92655] Ephemeral server handling GET request
+[info] >  * hit
+[debug] [2020-03-31T16:47:44.597Z] [runtime-status] [92655] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-03-31T16:47:44.599Z] [worker-app-3183a63e-2cb5-4cdc-9054-4b411d97bf50]: IDLE
+[debug] [2020-03-31T16:47:44.599Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] [hosting] Rewriting /api/contact-me to http://localhost:5001/test-27d0e/us-central1/app for local Function app
+[debug] [2020-03-31T16:47:53.622Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-31T16:47:53.622Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-31T16:47:53.622Z] Accepted request POST /test-27d0e/us-central1/app/api/contact-me --> app
+[debug] [2020-03-31T16:47:53.622Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-31T16:47:53.622Z] [worker-app-3183a63e-2cb5-4cdc-9054-4b411d97bf50]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_92655.sock
+[debug] [2020-03-31T16:47:53.622Z] [worker-app-3183a63e-2cb5-4cdc-9054-4b411d97bf50]: BUSY
+[debug] [2020-03-31T16:47:53.625Z] [runtime-status] [92655] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-03-31T16:47:53.625Z] [runtime-status] [92655] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-03-31T16:47:53.625Z] [runtime-status] [92655] Running app in mode HTTPS
+[debug] [2020-03-31T16:47:53.625Z] [runtime-status] [92655] Attempting to listen to socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_92655.sock
+[debug] [2020-03-31T16:47:53.627Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-31T16:47:53.644Z] [runtime-status] [92655] Ephemeral server handling POST request
 [info] >  contact me route was hit!
 [info] >  email sent! david.aurel001@gmail.com david (david.a.durlan@gmail.com) says: "asdf" pray
-[debug] [2020-03-31T12:31:58.735Z] [runtime-status] [84584] Ephemeral server survived.
-[info] >  worked
+[debug] [2020-03-31T16:47:53.676Z] [runtime-status] [92655] Ephemeral server survived.
+[info] >  sending email worked
 [info] i  functions: Finished "app" in ~1s
-[debug] [2020-03-31T12:31:59.535Z] [worker-app-35682a22-8bb3-4f41-9a4f-5b26ed8816ec]: IDLE
-[debug] [2020-03-31T12:31:59.535Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2020-03-31T12:34:05.853Z] File /Users/David/Desktop/code/personal_website/personal-website/functions/index.js changed, reloading triggers
-[debug] [2020-03-31T12:34:06.854Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
-[debug] [2020-03-31T12:34:06.855Z] [worker-~diagnostic~-73846680-cb2a-4d7b-adaf-c9d6dd4e869a]: FINISHING
-[debug] [2020-03-31T12:34:06.855Z] [worker-pool] Shutting down IDLE worker (app)
-[debug] [2020-03-31T12:34:06.855Z] [worker-app-35682a22-8bb3-4f41-9a4f-5b26ed8816ec]: FINISHING
-[debug] [2020-03-31T12:34:06.873Z] [worker-pool] addWorker(~diagnostic~)
-[debug] [2020-03-31T12:34:06.874Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
-[debug] [2020-03-31T12:34:06.874Z] [worker-pool] submitWork(triggerId=)
-[debug] [2020-03-31T12:34:06.874Z] [worker-~diagnostic~-10f53402-3b6f-448c-9560-30f8ab13f080]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_84678.sock
-[debug] [2020-03-31T12:34:06.874Z] [worker-~diagnostic~-10f53402-3b6f-448c-9560-30f8ab13f080]: BUSY
-[debug] [2020-03-31T12:34:06.876Z] [worker-~diagnostic~-73846680-cb2a-4d7b-adaf-c9d6dd4e869a]: exited
-[debug] [2020-03-31T12:34:06.876Z] [worker-~diagnostic~-73846680-cb2a-4d7b-adaf-c9d6dd4e869a]: FINISHED
-[debug] [2020-03-31T12:34:06.876Z] [worker-app-35682a22-8bb3-4f41-9a4f-5b26ed8816ec]: exited
-[debug] [2020-03-31T12:34:06.876Z] [worker-app-35682a22-8bb3-4f41-9a4f-5b26ed8816ec]: FINISHED
-[debug] [2020-03-31T12:34:07.591Z] [runtime-status] [84678] Functions runtime initialized. {"cwd":"/Users/David/Desktop/code/personal_website/personal-website/functions","node_version":"13.9.0"}
-[debug] [2020-03-31T12:34:07.594Z] [runtime-status] [84678] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
-[debug] [2020-03-31T12:34:07.596Z] [runtime-status] [84678] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-03-31T12:34:07.598Z] [runtime-status] [84678] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-03-31T12:34:07.599Z] [runtime-status] [84678] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-03-31T12:34:08.168Z] [worker-~diagnostic~-10f53402-3b6f-448c-9560-30f8ab13f080]: IDLE
-[debug] [2020-03-31T12:34:24.700Z] File /Users/David/Desktop/code/personal_website/personal-website/functions/index.js changed, reloading triggers
-[debug] [2020-03-31T12:34:25.705Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
-[debug] [2020-03-31T12:34:25.706Z] [worker-~diagnostic~-10f53402-3b6f-448c-9560-30f8ab13f080]: FINISHING
-[debug] [2020-03-31T12:34:25.706Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
-[debug] [2020-03-31T12:34:25.706Z] [worker-pool] Cleaned up workers for app: 1 --> 0
-[debug] [2020-03-31T12:34:25.712Z] [worker-pool] addWorker(~diagnostic~)
-[debug] [2020-03-31T12:34:25.712Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
-[debug] [2020-03-31T12:34:25.712Z] [worker-pool] submitWork(triggerId=)
-[debug] [2020-03-31T12:34:25.712Z] [worker-~diagnostic~-ac3201da-fb3a-4411-ac38-ebc5b48a4964]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_84688.sock
-[debug] [2020-03-31T12:34:25.712Z] [worker-~diagnostic~-ac3201da-fb3a-4411-ac38-ebc5b48a4964]: BUSY
-[debug] [2020-03-31T12:34:25.713Z] [worker-~diagnostic~-10f53402-3b6f-448c-9560-30f8ab13f080]: exited
-[debug] [2020-03-31T12:34:25.713Z] [worker-~diagnostic~-10f53402-3b6f-448c-9560-30f8ab13f080]: FINISHED
-[debug] [2020-03-31T12:34:26.033Z] [runtime-status] [84688] Functions runtime initialized. {"cwd":"/Users/David/Desktop/code/personal_website/personal-website/functions","node_version":"13.9.0"}
-[debug] [2020-03-31T12:34:26.035Z] [runtime-status] [84688] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
-[debug] [2020-03-31T12:34:26.039Z] [runtime-status] [84688] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-03-31T12:34:26.041Z] [runtime-status] [84688] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-03-31T12:34:26.042Z] [runtime-status] [84688] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-03-31T12:34:26.407Z] [worker-~diagnostic~-ac3201da-fb3a-4411-ac38-ebc5b48a4964]: IDLE
-[debug] [2020-03-31T14:01:32.802Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-03-31T14:01:32.804Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-03-31T14:01:32.804Z] Accepted request GET /test-27d0e/us-central1/app/portfolio/icons/back.svg --> app
-[debug] [2020-03-31T14:01:32.805Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
-[debug] [2020-03-31T14:01:32.812Z] [worker-pool] addWorker(app)
-[debug] [2020-03-31T14:01:32.812Z] [worker-pool] Adding worker with key app, total=1
-[debug] [2020-03-31T14:01:32.812Z] [worker-pool] submitWork(triggerId=app)
-[debug] [2020-03-31T14:01:32.813Z] [worker-app-eb8ced70-3d87-4da3-bb05-48f96139c775]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_85322.sock
-[debug] [2020-03-31T14:01:32.813Z] [worker-app-eb8ced70-3d87-4da3-bb05-48f96139c775]: BUSY
-[debug] [2020-03-31T14:01:33.624Z] [runtime-status] [85322] Functions runtime initialized. {"cwd":"/Users/David/Desktop/code/personal_website/personal-website/functions","node_version":"13.9.0"}
-[debug] [2020-03-31T14:01:33.631Z] [runtime-status] [85322] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
-[debug] [2020-03-31T14:01:33.636Z] [runtime-status] [85322] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-03-31T14:01:33.638Z] [runtime-status] [85322] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-03-31T14:01:33.639Z] [runtime-status] [85322] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/David/Desktop/code/personal_website/personal-website/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-03-31T14:01:35.153Z] [runtime-status] [85322] Trigger "app" has been found, beginning invocation!
-[info] i  functions: Beginning execution of "app"
-[debug] [2020-03-31T14:01:35.157Z] [runtime-status] [85322] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
-[debug] [2020-03-31T14:01:35.157Z] [runtime-status] [85322] Running app in mode HTTPS
-[debug] [2020-03-31T14:01:35.167Z] [runtime-status] [85322] Attempting to listen to socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_85322.sock
-[debug] [2020-03-31T14:01:35.177Z] [functions] Runtime ready! Sending request!
-[debug] [2020-03-31T14:01:35.194Z] [runtime-status] [85322] Ephemeral server handling GET request
-[debug] [2020-03-31T14:01:35.213Z] [runtime-status] [85322] Ephemeral server survived.
-[info] i  functions: Finished "app" in ~1s
-[debug] [2020-03-31T14:01:35.219Z] [worker-app-eb8ced70-3d87-4da3-bb05-48f96139c775]: IDLE
-[debug] [2020-03-31T14:01:35.220Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-31T16:47:54.376Z] [worker-app-3183a63e-2cb5-4cdc-9054-4b411d97bf50]: IDLE
+[debug] [2020-03-31T16:47:54.377Z] [work-queue] {"queueLength":0,"workRunningCount":0}
