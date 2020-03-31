@@ -13,7 +13,6 @@ const ses = new aws.SES({
 
 exports.sendEmail = function(recipient, message, subject) {
     console.log('email sent!', recipient, message, subject);
-
     return ses
         .sendEmail({
             Source: 'David Durlan <david.aurel001@gmail.com>',
@@ -31,6 +30,5 @@ exports.sendEmail = function(recipient, message, subject) {
                 }
             }
         })
-        .promise()
-        .catch(err => err);
+        .promise();
 };

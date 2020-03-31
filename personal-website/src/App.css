@@ -10,6 +10,7 @@
     --blue: #00b;
     --red: #ed2a2f;
     --yellow: #ffcd00;
+    --green: #00b67f;
 }
 
 .red {
@@ -404,6 +405,15 @@ input::placeholder,
 textarea::placeholder {
     color: var(--blue);
 }
+
+.error {
+    color: var(--red);
+}
+
+.success {
+    color: var(--green);
+}
+
 /* media query */
 @media (min-width: 600px) {
     .navLinks {
