@@ -30,9 +30,9 @@ const Portfolio = ({ data }) => {
                         <CSSTransition
                             key={location.key}
                             timeout={500}
-                            classNames='fade'
+                            classNames='slide'
                         >
-                            <Switch>
+                            <Switch location={location}>
                                 <Route exact path='/portfolio'>
                                     <PortfolioNav data={data} />
                                 </Route>

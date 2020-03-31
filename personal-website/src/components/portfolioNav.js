@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 const PortfolioNav = ({ data }) => {
     return (
-        <div className='page'>
+        <div className='page portfolioNav'>
             {data.map((el, id) => {
                 return (
                     <Link to={`/portfolio/${id}`} key={id}>
