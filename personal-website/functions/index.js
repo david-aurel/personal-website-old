@@ -1,7 +1,6 @@
 const functions = require('firebase-functions');
 
 const express = require('express');
-const engine = require('consolidate');
 
 const data = require('./data.json');
 const ses = require('./ses.js');

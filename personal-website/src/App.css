@@ -56,13 +56,12 @@ li {
     margin: 20px 0px;
 }
 video {
-    height: 100%;
     width: 100%;
 }
 
 .page {
     position: absolute;
-    height: 100%;
+    height: auto;
     top: 0;
     left: 0;
     right: 0;
@@ -186,11 +185,29 @@ main p {
 
 /* portfolio */
 .portfolio {
-    overflow: hidden;
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    position: relative;
-    grid-column-gap: 20px;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 25px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.portfolio-card {
+    overflow: scroll;
+}
+.portfolioNav {
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.portfolioNav a {
+    height: 200px;
+    min-width: 100%;
+    max-width: 230px;
+    background: lightgrey;
+    margin: 10px;
 }
 
 .portfolio-card-wrapper {
@@ -214,41 +231,29 @@ a.portfolio-card {
 
 .icon {
     background: white;
-    width: 12px;
-}
-
-.portfolio-element {
-    display: block;
-    transition: 0.5s;
-    width: 100%;
-    height: 0%;
+    width: 15px;
+    padding-top: 4px;
     position: absolute;
-    width: 100%;
-    height: 0%;
-    overflow: hidden;
+    top: 0;
 }
 
-.portfolio-element-content {
-    padding: 0 10px;
-}
-
-.portfolio-element h2 {
+.portfolio-card h2 {
     text-align: center;
     margin-bottom: 15px;
 }
 
-.portfolio-element video {
+.portfolio-card video {
     margin-bottom: 25px;
 }
 
-.portfolio-element p {
+.portfolio-card p {
     margin-bottom: 20px;
 }
 .portfolio-description {
     font-weight: bold;
 }
 
-.portfolio-element a {
+.portfolio-card a {
     font-weight: bold;
     border: 2px solid var(--blue);
     padding: 7px;
@@ -260,7 +265,7 @@ a.portfolio-card {
     word-break: break-all;
 }
 
-.portfolio-element ul {
+.portfolio-card ul {
     margin-bottom: 50px;
 }
 
@@ -422,10 +427,16 @@ textarea::placeholder {
     }
     .contact {
         flex-wrap: nowrap;
+        width: 100%;
     }
     .contact-card {
         margin-bottom: 0;
         margin-right: 30px;
+    }
+
+    .portfolioNav a {
+        height: 150px;
+        min-width: 230px;
     }
 }
 @media (min-width: 350px) {
@@ -468,7 +479,7 @@ textarea::placeholder {
 .slide-appear-active,
 .slide-enter.slide-enter-active {
     transform: translateX(0);
-    transition: 300ms linear;
+    transition: 400ms;
 }
 
 .slide-exit {
@@ -477,7 +488,7 @@ textarea::placeholder {
 
 .slide-exit.slide-exit-active {
     transform: translateX(-100%);
-    transition: 300ms linear;
+    transition: 400ms;
 }
 
 .slide-back-appear,
@@ -488,7 +499,7 @@ textarea::placeholder {
 .slide-back-appear-active,
 .slide-back-enter.slide-back-enter-active {
     transform: translateX(0);
-    transition: 300ms linear;
+    transition: 400ms;
 }
 
 .slide-back-exit {
@@ -497,5 +508,5 @@ textarea::placeholder {
 
 .slide-back-exit.slide-back-exit-active {
     transform: translateX(100%);
-    transition: 300ms linear;
+    transition: 300ms;
 }

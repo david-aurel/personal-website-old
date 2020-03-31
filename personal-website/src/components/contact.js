@@ -42,8 +42,8 @@ const Contact = ({ data }) => {
     };
 
     return (
-        <div className='page'>
-            <div className='contact page'>
+        <div className='page contact'>
+            <div className='contact'>
                 <div className='contact-card'>
                     <ul>
                         {data.map((el, idx) => {

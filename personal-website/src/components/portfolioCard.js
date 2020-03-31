@@ -9,12 +9,58 @@ import {
 
 const PortfolioCard = ({ data, changeAnimation }) => {
     const { project } = useParams();
+    data = data[project];
+
+    const bulletPoints = () => {
+        if (data['multiple-bullets']) {
+            // Loop trough multiple bullet points
+            return data['bullet-points'].map((el, idx) => {
+                return (
+                    <ul key={idx}>
+                        {el.map((el, idx) => {
+                            return <li key={idx}>{el}</li>;
+                        })}
+                    </ul>
+                );
+            });
+        } else {
+            // loop trough regular bulletpoints
+            return (
+                <ul>
+                    {data['bullet-points'].map((el, idx) => {
+                        return <li key={idx}>{el}</li>;
+                    })}
+                </ul>
+            );
+        }
+    };
     return (
-        <div className='page'>
+        <div className='page portfolio'>
             <Link to='/portfolio' onClick={() => changeAnimation('slide-back')}>
-                back to nav
+                <img src='/icons/back.svg' name='back' alt='' class='icon' />{' '}
             </Link>
-            <p>{data[project].title}</p>
+            <div className='portfolio-card'>
+                <h2>{data.title}</h2>
+
+                <video
+                    src={data.imgUrl}
+                    type='video/mp4'
+                    autoplay
+                    muted
+                    loop
+                    controls
+                ></video>
+
+                <p class='portfolio-description'>{data.description}</p>
+
+                <p>{data.text}</p>
+
+                {data['bullet-points'] && <h4>Features:</h4> && bulletPoints()}
+
+                <a href={data.url} target='_blank' rel='noopener noreferrer'>
+                    {data.url}
+                </a>
+            </div>
         </div>
     );
 };
