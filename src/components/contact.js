@@ -6,7 +6,6 @@ const Contact = ({ data }) => {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
-    const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
     const [success, setSuccess] = useState(false);
     const [formInfo, setFormInfo] = useState('...Or write me here!');
