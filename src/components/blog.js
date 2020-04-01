@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Blog = () => {
+const Blog = ({ data }) => {
     return (
-        <div className='page'>
-            <p>in progress</p>
+        <div className='page blog'>
+            {data.split('\n').map((line, idx) => (
+                <p key={idx}>{line}</p>
+            ))}
         </div>
     );
 };

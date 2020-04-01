@@ -47,6 +47,7 @@ body {
     position: relative;
     height: 100%;
     overflow: scroll;
+    flex-grow: 1;
 }
 
 ul {
@@ -112,6 +113,7 @@ nav {
     overflow: hidden;
     padding-bottom: 10px;
     margin-bottom: 10px;
+    max-width: 350px;
 }
 .navLink a {
     text-decoration: none;
@@ -185,12 +187,22 @@ main p {
     margin-bottom: 10px;
 }
 
+/* blog */
+
+.blog p {
+    margin-bottom: 10px;
+}
+
 /* portfolio */
 .portfolio {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-column-gap: 25px;
-    overflow: hidden;
+    overflow: scroll;
+    height: 100%;
+}
+
+.portfolioWrapper {
     height: 100%;
 }
 
@@ -439,7 +451,6 @@ textarea::placeholder {
 /* media query */
 @media (min-width: 600px) {
     .navLinks {
-        max-width: 350px;
         margin: 0;
     }
     .contact {

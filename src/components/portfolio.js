@@ -14,7 +14,7 @@ const Portfolio = ({ data, location }) => {
             <Route
                 render={({ location }) => (
                     <TransitionGroup
-                        className='main'
+                        className='portfolioWrapper'
                         childFactory={child =>
                             React.cloneElement(child, {
                                 classNames: animationClassName
