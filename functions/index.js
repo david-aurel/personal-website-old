@@ -42,8 +42,6 @@ app.post('/api/contact-me', (req, res) => {
 });
 
 app.get('/*', (req, res) => {
-    console.log('* hit');
-
-    res.redirect('/');
+    // res.redirect('/');
 });
 exports.app = functions.https.onRequest(app);
