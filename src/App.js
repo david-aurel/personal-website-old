@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Redirect } from 'react-router';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import './App.css';
@@ -34,7 +35,7 @@ function App() {
                             {/* <div className='space'></div> */}
                             <p className='navLink'>
                                 <Link
-                                    to='/'
+                                    to='/blog'
                                     onClick={() => {
                                         setSliderState('slider-blog');
                                     }}
@@ -77,12 +78,15 @@ function App() {
                                 >
                                     <Switch location={location}>
                                         <Route exact path='/'>
-                                            <Blog data={data.blog} />
+                                            <Redirect to='/portfolio' />
                                         </Route>
-
                                         <Route path='/portfolio'>
                                             <Portfolio data={data.portfolio} />
                                         </Route>
+                                        <Route path='/blog'>
+                                            <Blog data={data.blog} />
+                                        </Route>
+
                                         <Route path='/about'>
                                             <About data={data['about-me']} />
                                         </Route>
