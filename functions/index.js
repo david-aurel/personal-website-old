@@ -19,9 +19,10 @@ const app = express();
 //     res.render('index', { data });
 // });
 
-// app.get('/animation', (req, res) => {
-//     res.render('animation');
-// });
+app.get('/test', (req, res) => {
+    console.log('test hit');
+    res.send({ test: 'success' });
+});
 
 app.post('/api/contact-me', (req, res) => {
     console.log('contact me route was hit!');
