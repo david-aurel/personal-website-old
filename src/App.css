@@ -213,7 +213,7 @@ main p {
     height: auto;
     display: flex;
     flex-flow: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .portfolioNav a {
@@ -467,7 +467,7 @@ textarea::placeholder {
         min-width: 44%;
         max-width: 44%;
         border: none;
-        margin: 15px 15px 40px 15px;
+        margin: 15px 0 40px 0;
         padding: 0;
     }
 
