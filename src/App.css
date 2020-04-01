@@ -110,6 +110,8 @@ nav {
     font-size: 5vw;
     position: relative;
     overflow: hidden;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 .navLink a {
     text-decoration: none;
@@ -123,20 +125,20 @@ nav {
     background: var(--yellow);
 }
 
-.slider-blog {
-    margin-left: 28%;
-    width: 12%;
-}
 .slider-portfolio {
     margin-left: 0%;
-    width: 22%;
+    width: 21%;
+}
+.slider-blog {
+    margin-left: 29%;
+    width: 11%;
 }
 .slider-about {
     margin-left: 48%;
     width: 25%;
 }
 .slider-contact {
-    margin-left: 80%;
+    margin-left: 81%;
     width: 20%;
 }
 
@@ -208,15 +210,14 @@ main p {
     justify-content: space-between;
     min-width: 100%;
     text-decoration: none;
-    margin-bottom: 50px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .portfolioNav p {
     text-align: center;
     font-size: 1.2rem;
-    color: black;
+
     font-weight: 800;
     margin-bottom: 10px;
 }
@@ -459,10 +460,6 @@ textarea::placeholder {
         padding: 0;
     }
 
-    .portfolioNav p {
-        font-weight: 400;
-    }
-
     /* .portfolioNav div {
         height: 150px;
         flex-grow: 1;
@@ -471,6 +468,8 @@ textarea::placeholder {
 @media (min-width: 350px) {
     .navLinks {
         font-size: 1.2rem;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
 }
 
