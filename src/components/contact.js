@@ -22,6 +22,7 @@ const Contact = ({ data }) => {
         } else {
             setFormInfo('Sending...');
         }
+
         const { data } = await axios.post('/api/contact-me', {
             name: name,
             email: email,

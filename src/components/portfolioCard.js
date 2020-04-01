@@ -50,7 +50,7 @@ const PortfolioCard = ({ data, changeAnimation }) => {
                     controls
                 ></video>
 
-                <p class='portfolio-description'>{data.description}</p>
+                <p className='portfolio-description'>{data.description}</p>
 
                 <p>{data.text}</p>
 

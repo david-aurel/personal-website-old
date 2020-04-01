@@ -31,7 +31,7 @@ function App() {
                                     Portfolio
                                 </Link>
                             </p>
-                            <div className='space'></div>
+                            {/* <div className='space'></div> */}
                             <p className='navLink'>
                                 <Link
                                     to='/'
@@ -42,7 +42,7 @@ function App() {
                                     Blog
                                 </Link>
                             </p>
-                            <div className='space'></div>
+                            {/* <div className='space'></div> */}
                             <p className='navLink'>
                                 <Link
                                     to='/about'
@@ -53,7 +53,7 @@ function App() {
                                     About me
                                 </Link>
                             </p>
-                            <div className='space'></div>
+                            {/* <div className='space'></div> */}
                             <p className='navLink'>
                                 <Link
                                     to='/contact'
