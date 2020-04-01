@@ -24,7 +24,8 @@
             ],
 
             "url": "https://www.github.com/david-aurel/social_network",
-            "imgUrl": "https://daviddurlan.s3.amazonaws.com/socialnetwork.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/socialnetwork.mp4",
+            "thumbnail": "/thumbnails/socialnetwork.jpg"
         },
         {
             "title": "Connect Four",
@@ -37,7 +38,8 @@
                 "Dark Mode"
             ],
             "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "https://daviddurlan.s3.amazonaws.com/connect_four.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/connect_four.mp4",
+            "thumbnail": "/thumbnails/connect_four.jpg"
         },
         {
             "title": "Metric Converter",
@@ -48,7 +50,8 @@
                 "The conversion rate for the currencies come from a currency API"
             ],
             "url": "https://www.github.com/david-aurel/converter",
-            "imgUrl": "https://daviddurlan.s3.amazonaws.com/converter.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/converter.mp4",
+            "thumbnail": "/thumbnails/converter.jpg"
         },
         {
             "title": "Petition",
@@ -67,7 +70,8 @@
                 ["Styled using Bootstrap 4"]
             ],
             "url": "https://www.github.com/david-aurel/petition",
-            "imgUrl": "https://daviddurlan.s3.amazonaws.com/petition.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/petition.mp4",
+            "thumbnail": "/thumbnails/petition.jpg"
         },
         {
             "title": "Image Board",
@@ -82,7 +86,8 @@
                 "Users can delete images"
             ],
             "url": "https://www.github.com/david-aurel/image_board",
-            "imgUrl": "https://daviddurlan.s3.amazonaws.com/image_board.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/image_board.mp4",
+            "thumbnail": "/thumbnails/image_board.jpg"
         },
         {
             "title": "Quiz",
@@ -95,7 +100,8 @@
                 "Strictly translating the cover, text and overall layout of the original book with CSS"
             ],
             "url": "https://www.github.com/david-aurel/fragebogen",
-            "imgUrl": "https://daviddurlan.s3.amazonaws.com/fragebogen.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/fragebogen.mp4",
+            "thumbnail": "/thumbnails/fragebogen.jpg"
         },
         {
             "title": "Rejection Leaderboard",
@@ -107,14 +113,16 @@
                 "Deployment to firebase, setting up the server and airtable as a cloud function"
             ],
             "url": "https://github.com/david-aurel/rejection_counter",
-            "imgUrl": "https://daviddurlan.s3.amazonaws.com/rejection_leaderboard.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/rejection_leaderboard.mp4",
+            "thumbnail": "/thumbnails/rejection_leaderboard.jpg"
         },
         {
             "title": "Incremental Search",
             "description": "Show list of countries that match the user's input, done in vanilla Javascript.",
             "text": "This project helped me a lot to become more familiar with DOM Manipulations and at the time I thought it was just the coolest thing ever.",
             "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "https://daviddurlan.s3.amazonaws.com/incremental_search.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/incremental_search.mp4",
+            "thumbnail": "/thumbnails/incremental_search.jpg"
         },
         {
             "title": "Live Ticker",
@@ -129,7 +137,8 @@
                 "Refactored the code to obtain the results from different sources simultaniously"
             ],
             "url": "https://www.github.com/david-aurel/peppermint_code",
-            "imgUrl": "https://daviddurlan.s3.amazonaws.com/ticker.mp4"
+            "imgUrl": "https://daviddurlan.s3.amazonaws.com/ticker.mp4",
+            "thumbnail": "/thumbnails/ticker.jpg"
         }
     ],
     "contact-card": [
@@ -144,5 +153,5 @@
             "value": "david-aurel"
         }
     ],
-    "about-me": "Hi, I'm David - Fresh out of bootcamp and hungry for more! \n I create responsive and intuitive web applications with a dedication to aesthetics, functionality and accessibility. I have a background in Design and Film. \n Why code? Code gives me the possibility to create something that is more than just entertainment. Ideally, it solves an inconvenient problem in our life, like getting directions, payments, calling a friend. etc... It's a tool to create one the most worthwhile things of our time! \n I’m a hard worker and I obsess over what I make. I love being in a big problem slowly seeing everything click into place- This is even more rewarding when working with others as there is a power in collaboration and feeding off each other’s ideas."
+    "about-me": "Hey, I'm David - Fresh out of bootcamp and hungry for more! \\n I create responsive and intuitive web applications with a dedication to aesthetics, functionality and accessibility. I have a background in Design and Film. \\n"
 }

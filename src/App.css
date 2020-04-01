@@ -203,11 +203,27 @@ main p {
 }
 
 .portfolioNav a {
-    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-width: 100%;
     max-width: 230px;
-    background: lightgrey;
-    margin: 10px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid;
+}
+
+.portfolioNav p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.portfolioNav div {
+    min-height: 210px;
 }
 
 .portfolio-card-wrapper {

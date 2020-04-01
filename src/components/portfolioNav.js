@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const PortfolioNav = ({ data, changeAnimation }) => {
     return (
@@ -11,7 +11,16 @@ const PortfolioNav = ({ data, changeAnimation }) => {
                         key={id}
                         onClick={() => changeAnimation('slide')}
                     >
-                        link to {el.title} card
+                        {/* <img className='thumbnail' src={el.thumbnail} alt='' /> */}
+                        <p>{el.title}</p>
+                        <div
+                            style={{
+                                backgroundImage: `url(${el.thumbnail})`,
+                                height: '100%',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundSize: 'contain'
+                            }}
+                        ></div>
                     </Link>
                 );
             })}
