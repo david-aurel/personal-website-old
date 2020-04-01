@@ -13,14 +13,7 @@ const PortfolioNav = ({ data, changeAnimation }) => {
                     >
                         {/* <img className='thumbnail' src={el.thumbnail} alt='' /> */}
                         <p>{el.title}</p>
-                        <div
-                            style={{
-                                backgroundImage: `url(${el.thumbnail})`,
-                                height: '100%',
-                                backgroundRepeat: 'no-repeat',
-                                backgroundSize: 'contain'
-                            }}
-                        ></div>
+                        <img src={el.thumbnail} alt='' />
                     </Link>
                 );
             })}

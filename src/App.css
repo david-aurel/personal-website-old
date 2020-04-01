@@ -207,10 +207,9 @@ main p {
     flex-direction: column;
     justify-content: space-between;
     min-width: 100%;
-    max-width: 230px;
     text-decoration: none;
-    margin-bottom: 30px;
-    padding-bottom: 40px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
     border-bottom: 1px solid;
 }
 
@@ -222,8 +221,9 @@ main p {
     margin-bottom: 10px;
 }
 
-.portfolioNav div {
-    min-height: 210px;
+.portfolioNav img {
+    border-radius: 12px;
+    width: 100%;
 }
 
 .portfolio-card-wrapper {
@@ -451,9 +451,21 @@ textarea::placeholder {
     }
 
     .portfolioNav a {
-        height: 150px;
-        min-width: 230px;
+        height: 230px;
+        min-width: 45%;
+        border: none;
+        margin: 15px 15px 40px 15px;
+        padding: 0;
     }
+
+    .portfolioNav p {
+        font-weight: 400;
+    }
+
+    /* .portfolioNav div {
+        height: 150px;
+        flex-grow: 1;
+    } */
 }
 @media (min-width: 350px) {
     .navLinks {
