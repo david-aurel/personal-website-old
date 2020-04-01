@@ -110,7 +110,6 @@ nav {
     font-size: 5vw;
     position: relative;
     overflow: hidden;
-    padding-bottom: 5px;
 }
 .navLink a {
     text-decoration: none;
@@ -125,11 +124,11 @@ nav {
 }
 
 .slider-blog {
-    margin: 0;
+    margin-left: 28%;
     width: 12%;
 }
 .slider-portfolio {
-    margin-left: 19%;
+    margin-left: 0%;
     width: 22%;
 }
 .slider-about {
@@ -145,6 +144,7 @@ nav {
     flex-grow: 1;
     background: white;
     z-index: 1;
+    height: 30px;
 }
 
 /* main */
@@ -452,7 +452,8 @@ textarea::placeholder {
 
     .portfolioNav a {
         height: 230px;
-        min-width: 45%;
+        min-width: 44%;
+        max-width: 44%;
         border: none;
         margin: 15px 15px 40px 15px;
         padding: 0;

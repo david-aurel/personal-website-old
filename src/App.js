@@ -11,7 +11,7 @@ import Blog from './components/blog';
 import data from './data';
 
 function App() {
-    const [sliderState, setSliderState] = useState('slider-blog');
+    const [sliderState, setSliderState] = useState('slider-portfolio');
     return (
         <>
             <Header />
@@ -20,17 +20,7 @@ function App() {
                     <nav>
                         <div className='navLinks'>
                             <div className={`slider ${sliderState}`}></div>
-                            <p className='navLink'>
-                                <Link
-                                    to='/'
-                                    onClick={() => {
-                                        setSliderState('slider-blog');
-                                    }}
-                                >
-                                    Blog
-                                </Link>
-                            </p>
-                            <div className='space'></div>
+
                             <p className='navLink'>
                                 <Link
                                     to='/portfolio'
@@ -39,6 +29,17 @@ function App() {
                                     }}
                                 >
                                     Portfolio
+                                </Link>
+                            </p>
+                            <div className='space'></div>
+                            <p className='navLink'>
+                                <Link
+                                    to='/'
+                                    onClick={() => {
+                                        setSliderState('slider-blog');
+                                    }}
+                                >
+                                    Blog
                                 </Link>
                             </p>
                             <div className='space'></div>
