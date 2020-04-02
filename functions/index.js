@@ -41,7 +41,16 @@ app.post('/api/contact-me', (req, res) => {
         });
 });
 
-app.get('/*', (req, res) => {
-    // res.redirect('/');
+app.get('/portfolio', (req, res) => {
+    res.redirect('/');
+});
+app.get('/blog', (req, res) => {
+    res.redirect('/');
+});
+app.get('/about', (req, res) => {
+    res.redirect('/');
+});
+app.get('/contact', (req, res) => {
+    res.redirect('/');
 });
 exports.app = functions.https.onRequest(app);
