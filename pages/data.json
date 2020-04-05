@@ -141,7 +141,7 @@
             "thumbnail": "/thumbnails/ticker.jpg"
         }
     ],
-    "contact-card": [
+    "contact": [
         {
             "url": "https://www.linkedin.com/in/daviddurlan/",
             "imgUrl": "icons/linkedin.svg",
@@ -153,6 +153,6 @@
             "value": "david-aurel"
         }
     ],
-    "about-me": "Hey, I'm David - Fresh out of bootcamp and hungry for more! \n I create responsive and intuitive web applications with a dedication to aesthetics, functionality and accessibility. I have a background in Design and Film. \n Why code? Code gives me the possibility to create something that is more than just entertainment. Ideally, it solves an inconvenient problem in your real life, like getting directions, payments, calling a friend. etc... It's a tool to create one the most worthwhile things of our time! \n I’m a hard worker and I obsess over what I make. I love being in a big problem slowly seeing everything click into place- This is even more rewarding when working with others as there is a power in collaboration and feeding off each other’s ideas.",
+    "about": "Hey, I'm David - Fresh out of bootcamp and hungry for more! \n I create responsive and intuitive web applications with a dedication to aesthetics, functionality and accessibility. I have a background in Design and Film. \n Why code? Code gives me the possibility to create something that is more than just entertainment. Ideally, it solves an inconvenient problem in your real life, like getting directions, payments, calling a friend. etc... It's a tool to create one the most worthwhile things of our time! \n I’m a hard worker and I obsess over what I make. I love being in a big problem slowly seeing everything click into place- This is even more rewarding when working with others as there is a power in collaboration and feeding off each other’s ideas.",
     "blog": "I'm currently working on my first blog posts, yay! \n Also, this website is still under construction. I'm currently working hard to make it isomorphic, so that the routes work on page refreshes, seo, etc. \n Onwards and upwards!"
 }
