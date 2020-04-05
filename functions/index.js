@@ -7,18 +7,6 @@ const ses = require('./ses.js');
 
 const app = express();
 
-// app.engine('hbs', engine.handlebars);
-// app.set('views', './views');
-// app.set('view engine', 'hbs');
-
-// app.get('/about.json', (req, res) => {
-//     res.send(data['about-me']);
-// });
-// app.get('/', (req, res) => {
-//     res.set('Cache-Control', 'public, max-age=43200, s-maxage=86400');
-//     res.render('index', { data });
-// });
-
 app.get('/test', (req, res) => {
     console.log('test hit');
     res.send({ test: 'success' });
