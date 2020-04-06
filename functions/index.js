@@ -1,44 +1,49 @@
-const functions = require('firebase-functions');
+'use strict';
 
-const express = require('express');
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.ssrapp = undefined;
 
-const data = require('./data.json');
-const ses = require('./ses.js');
+var _firebaseFunctions = require('firebase-functions');
 
-const app = express();
+var functions = _interopRequireWildcard(_firebaseFunctions);
 
-app.get('/test', (req, res) => {
-    console.log('test hit');
-    res.send({ test: 'success' });
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _server = require('react-dom/server');
+
+var _App = require('./src/App');
+
+var _App2 = _interopRequireDefault(_App);
+
+var _data = require('./data');
+
+var _data2 = _interopRequireDefault(_data);
+
+var _express = require('express');
+
+var _express2 = _interopRequireDefault(_express);
+
+var _fs = require('fs');
+
+var _fs2 = _interopRequireDefault(_fs);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+var index = _fs2.default.readFileSync(__dirname + '/index.html', 'utf-8');
+
+var app = (0, _express2.default)();
+
+app.get('**', function (req, res) {
+    var html = (0, _server.renderToString)(_react2.default.createElement(_App2.default, { data: _data2.default }));
+    var finalHtml = index.replace('<!-- App -->', html);
+    res.set('Cache-Control', 'public, max-age=600, s-maxage=1200 ');
+    res.send(finalHtml);
 });
 
-app.post('/api/contact-me', (req, res) => {
-    console.log('contact me route was hit!');
-
-    const recipient = 'david.aurel001@gmail.com';
-    const message = `${req.body.name} (${req.body.email}) says: "${req.body.message}"`;
-    const subject = req.body.subject;
-    ses.sendEmail(recipient, message, subject)
-        .then(() => {
-            console.log('sending email worked');
-            return res.json({ success: true });
-        })
-        .catch(err => {
-            console.log('err in sending an email:', err);
-            return res.json({ success: false, err: err });
-        });
-});
-
-app.get('/portfolio', (req, res) => {
-    res.redirect('/');
-});
-app.get('/blog', (req, res) => {
-    res.redirect('/');
-});
-app.get('/about', (req, res) => {
-    res.redirect('/');
-});
-app.get('/contact', (req, res) => {
-    res.redirect('/');
-});
-exports.app = functions.https.onRequest(app);
+var ssrapp = exports.ssrapp = functions.https.onRequest(app);

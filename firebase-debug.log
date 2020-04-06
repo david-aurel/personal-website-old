@@ -1,0 +1,79 @@
+[debug] [2020-04-06T16:35:36.401Z] ----------------------------------------------------------------------
+[debug] [2020-04-06T16:35:36.402Z] Command:       /Users/David/.nvm/versions/node/v13.9.0/bin/node /Users/David/.nvm/versions/node/v13.9.0/bin/firebase serve
+[debug] [2020-04-06T16:35:36.403Z] CLI Version:   7.13.1
+[debug] [2020-04-06T16:35:36.403Z] Platform:      darwin
+[debug] [2020-04-06T16:35:36.403Z] Node Version:  v13.9.0
+[debug] [2020-04-06T16:35:36.404Z] Time:          Mon Apr 06 2020 18:35:36 GMT+0200 (Central European Summer Time)
+[debug] [2020-04-06T16:35:36.404Z] ----------------------------------------------------------------------
+[debug] [2020-04-06T16:35:36.404Z] 
+[debug] [2020-04-06T16:35:36.413Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-06T16:35:36.413Z] > authorizing via signed-in user
+[debug] [2020-04-06T16:35:36.413Z] [iam] checking project test-27d0e for permissions ["firebase.projects.get"]
+[debug] [2020-04-06T16:35:36.415Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/test-27d0e:testIamPermissions  
+
+[debug] [2020-04-06T16:35:36.688Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-06T16:35:36.690Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/test-27d0e  
+ 
+[debug] [2020-04-06T16:35:36.991Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/David/Desktop/code/personal_website'...
+[info] 
+[debug] [2020-04-06T16:35:36.996Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/test-27d0e/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "13"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2020-04-06T16:35:37.777Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/David/Desktop/code/personal_website/functions" for Cloud Functions...
+[debug] [2020-04-06T16:35:37.832Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-06T16:35:37.832Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-04-06T16:35:37.832Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-06T16:35:37.833Z] [worker-~diagnostic~-7379e812-5b25-450b-a9e6-df6a13f4328d]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_50843.sock
+[debug] [2020-04-06T16:35:37.833Z] [worker-~diagnostic~-7379e812-5b25-450b-a9e6-df6a13f4328d]: BUSY
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2020-04-06T16:35:38.147Z] [runtime-status] [50843] Functions runtime initialized. {"cwd":"/Users/David/Desktop/code/personal_website/functions","node_version":"13.9.0"}
+[debug] [2020-04-06T16:35:38.147Z] [runtime-status] [50843] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-06T16:35:38.150Z] [runtime-status] [50843] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/David/Desktop/code/personal_website/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-06T16:35:38.151Z] [runtime-status] [50843] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/David/Desktop/code/personal_website/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-06T16:35:38.152Z] [runtime-status] [50843] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/David/Desktop/code/personal_website/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[ssrapp]: http function initialized (http://localhost:5001/test-27d0e/us-central1/ssrapp).
+[debug] [2020-04-06T16:35:38.302Z] [worker-~diagnostic~-7379e812-5b25-450b-a9e6-df6a13f4328d]: IDLE
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/test-27d0e/us-central1/ssrapp for local Function ssrapp
+[debug] [2020-04-06T16:35:41.737Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-06T16:35:41.738Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-06T16:35:41.738Z] Accepted request GET /test-27d0e/us-central1/ssrapp/favicon.ico --> ssrapp
+[debug] [2020-04-06T16:35:41.749Z] [worker-pool] addWorker(ssrapp)
+[debug] [2020-04-06T16:35:41.749Z] [worker-pool] Adding worker with key ssrapp, total=1
+[debug] [2020-04-06T16:35:41.749Z] [worker-pool] submitWork(triggerId=ssrapp)
+[debug] [2020-04-06T16:35:41.749Z] [worker-ssrapp-2baf0257-7983-4892-af25-b966da3d9a0c]: Assigning socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_50852.sock
+[debug] [2020-04-06T16:35:41.749Z] [worker-ssrapp-2baf0257-7983-4892-af25-b966da3d9a0c]: BUSY
+[debug] [2020-04-06T16:35:42.058Z] [runtime-status] [50852] Functions runtime initialized. {"cwd":"/Users/David/Desktop/code/personal_website/functions","node_version":"13.9.0"}
+[debug] [2020-04-06T16:35:42.061Z] [runtime-status] [50852] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-06T16:35:42.064Z] [runtime-status] [50852] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/David/Desktop/code/personal_website/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-06T16:35:42.065Z] [runtime-status] [50852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/David/Desktop/code/personal_website/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-06T16:35:42.066Z] [runtime-status] [50852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/David/Desktop/code/personal_website/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-06T16:35:42.233Z] [runtime-status] [50852] Trigger "ssrapp" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "ssrapp"
+[debug] [2020-04-06T16:35:42.233Z] [runtime-status] [50852] triggerDefinition {"httpsTrigger":{},"name":"ssrapp","entryPoint":"ssrapp"}
+[debug] [2020-04-06T16:35:42.233Z] [runtime-status] [50852] Running ssrapp in mode HTTPS
+[debug] [2020-04-06T16:35:42.238Z] [runtime-status] [50852] Attempting to listen to socketPath: /var/folders/q9/zbkzzvl50m32jcqfw_9dvxc40000gp/T/fire_emu_50852.sock
+[debug] [2020-04-06T16:35:42.245Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-06T16:35:42.255Z] [runtime-status] [50852] Ephemeral server handling GET request
+[info] >  Warning: Failed prop type: The prop `history` is marked as required in `Router`, but its value is `undefined`.
+[info] >      in Router
+[info] >      in App
+[debug] [2020-04-06T16:35:42.266Z] [runtime-status] [50852] Ephemeral server survived.
+[info] >  TypeError: Cannot read property 'location' of undefined
+[info] >      at new Router (/Users/David/Desktop/code/personal_website/functions/node_modules/react-router/cjs/react-router.js:89:31)
+[info] >      at processChild (/Users/David/Desktop/code/personal_website/functions/node_modules/react-dom/cjs/react-dom-server.node.development.js:2995:14)
+[info] >      at resolve (/Users/David/Desktop/code/personal_website/functions/node_modules/react-dom/cjs/react-dom-server.node.development.js:2960:5)
+[info] >      at ReactDOMServerRenderer.render (/Users/David/Desktop/code/personal_website/functions/node_modules/react-dom/cjs/react-dom-server.node.development.js:3435:22)
+[info] >      at ReactDOMServerRenderer.read (/Users/David/Desktop/code/personal_website/functions/node_modules/react-dom/cjs/react-dom-server.node.development.js:3373:29)
+[info] >      at renderToString (/Users/David/Desktop/code/personal_website/functions/node_modules/react-dom/cjs/react-dom-server.node.development.js:3988:27)
+[info] >      at /Users/David/Desktop/code/personal_website/functions/index.js:43:43
+[info] >      at Layer.handle [as handle_request] (/Users/David/Desktop/code/personal_website/functions/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at next (/Users/David/Desktop/code/personal_website/functions/node_modules/express/lib/router/route.js:137:13)
+[info] >      at Route.dispatch (/Users/David/Desktop/code/personal_website/functions/node_modules/express/lib/router/route.js:112:3)
+[info] i  functions: Finished "ssrapp" in ~1s
+[debug] [2020-04-06T16:35:42.282Z] [worker-ssrapp-2baf0257-7983-4892-af25-b966da3d9a0c]: IDLE
+[debug] [2020-04-06T16:35:42.282Z] [work-queue] {"queueLength":0,"workRunningCount":0}

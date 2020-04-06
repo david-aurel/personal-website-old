@@ -1,0 +1,13 @@
+[debug] [2020-04-06T14:55:18.453Z] ----------------------------------------------------------------------
+[debug] [2020-04-06T14:55:18.455Z] Command:       /Users/David/.nvm/versions/node/v13.9.0/bin/node /Users/David/.nvm/versions/node/v13.9.0/bin/firebase serve
+[debug] [2020-04-06T14:55:18.455Z] CLI Version:   7.13.1
+[debug] [2020-04-06T14:55:18.455Z] Platform:      darwin
+[debug] [2020-04-06T14:55:18.455Z] Node Version:  v13.9.0
+[debug] [2020-04-06T14:55:18.456Z] Time:          Mon Apr 06 2020 16:55:18 GMT+0200 (Central European Summer Time)
+[debug] [2020-04-06T14:55:18.456Z] ----------------------------------------------------------------------
+[debug] [2020-04-06T14:55:18.456Z] 
+[debug] [2020-04-06T14:55:18.466Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-06T14:55:18.466Z] > authorizing via signed-in user
+[debug] [2020-04-06T14:55:18.467Z] [iam] checking project test-27d0e for permissions ["firebase.projects.get"]
+[debug] [2020-04-06T14:55:18.468Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/test-27d0e:testIamPermissions  
+

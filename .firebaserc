@@ -1,14 +1,5 @@
 {
   "projects": {
-    "default": "personal-76f16"
-  },
-  "targets": {
-    "personal-76f16": {
-      "hosting": {
-        "main": [
-          "daviddurlan"
-        ]
-      }
-    }
+    "default": "test-27d0e"
   }
 }
